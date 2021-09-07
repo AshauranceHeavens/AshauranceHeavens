@@ -1,0 +1,672 @@
+/* @import(); */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+header{
+    margin-bottom: 80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+#figure-figcaption{
+    font-style:italic;
+    /* font-size: bold; */
+}
+#mobile-none{
+    /* position: absolute; */
+    position: fixed;
+    /* background-color: pink; */
+    background:#1E1C1C ;
+    margin-left: -100px;
+    top: 0;
+    right: 0;
+    bottom:0;
+    padding: 20px 0px;
+    /* height: 200%; */
+    /* width: 80%; */
+    width:0;
+    z-index:5;
+    display: none;
+    transition: 0.1s ease-in;
+}
+#cross{
+    margin-left: 80%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+#cross .cross1, .cross2{
+    background-color: #fff;
+    box-shadow: 0px 0px 2px black;
+    width: 25px;
+    height: 3px;
+    margin-top: 2px;
+
+}
+.cross1{
+   transform: rotate(45deg) translate(1px, 0px);
+}
+.cross2{
+    transform: rotate(-45deg) translate(3px, -2px);
+}
+#mobile-none ul{
+    padding: 10px 0;
+    margin-top: 50px;
+    background-color: black;
+}
+#mobile-none li{
+    list-style-type: none;
+    text-align: center;
+    margin: 15px 0;
+    /* padding:10px; */
+}
+#mobile-none li:nth-child(1){
+    /* border: 1px solid pink; */
+    border:1px solid rgb(248, 131, 131);
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+}
+#mobile-none li:nth-child(1):hover{
+    border: none;
+}
+#mobile-none li a{
+    color: #fff;
+    text-decoration: none;
+    text-shadow:0px 0px 2px black;
+    padding: 10px;
+
+}
+/* #mobile-none li:hover{
+    color: #fff!important;
+    background-color: black;
+    border:1px dotted rgb(248, 131, 131);
+    padding: 10px;
+} */
+#mobile-none li a:hover{
+    color:#fff;
+    background-color: black;
+    border:1px dotted rgb(248, 131, 131);
+}
+#ham .bar1 , .bar2, .bar3{
+    background-color: black;
+    width: 25px;
+    height: 3px;
+    margin-top: 2px;
+}
+h1{
+    margin-left: 15px;
+    margin-top:15vh;
+    margin-bottom:15vh;
+    text-align: center;
+}
+h1 .By{
+    color: rgb(248, 131, 131);/*pink;*/
+}
+h1 .zim-zuh{
+    font-style: italic;
+    font-size: 60px;
+    margin-top: -15px;
+}
+main #pink > div{
+    transform: skewY(0deg);
+}
+main #pink{
+    /* background: pink; */
+    background-color: rgb(248, 131, 131);/*pink;*/
+    /* padding: 30px 20px; */
+    padding:30px 0;
+    transform: skewY(-2deg);
+    margin-bottom: -5px;
+
+}
+main #pink img{
+    width: 84%;
+    transform: skewY(2deg);
+    margin-bottom: 10px;
+    margin-left: 10%;
+    box-shadow: 0px 2px 27px black;
+}
+main #pink p{
+    color: #fff;
+    text-shadow: 0px 0px 8px black;
+    width: 240px;
+    transform: skewY(2deg);
+    margin-bottom: 10px;
+    margin-left: 10%; /*take note*/
+    /* text-align: center; */
+}
+main #clients{
+    color:black;
+    /* text-shadow: 0px 0px 8px black; */
+    background-color: #F3F3F3;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+#clients img{
+    width: 60px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+#CTA{
+    text-align: center;
+    margin-top:5vh ;
+}
+#CTA p{
+    margin-bottom: 15px;
+}
+#CTA a{
+    color:#fff;
+    text-shadow: 0px 0px 8px black;
+    padding:5px 80px;
+    text-decoration: none;
+    background:#51D88B;
+    border-radius: 50px;
+}
+footer{
+    margin-top: 5vh;
+    margin-bottom: 20px;
+}
+footer div{
+    color: #fff;
+    background-color:#1E1C1C ;
+    text-align: center;
+    padding:20px;
+    margin-bottom:20px;
+}
+footer > p{
+    text-align: center;
+    font-style: italic;
+}
+footer a{
+    color:rgb(248, 131, 131);
+    text-decoration:none;
+}
+footer > p > a{
+    color:rgb(248, 131, 131);/*pink;*/
+    text-decoration: none;
+    text-shadow: 0px 0px 1px black;
+}
+footer ul{
+    margin-top: 20px;
+    padding:0;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 5px 5%;
+    /* border-radius: 50%; */
+}
+footer img{
+    width:20px;
+    background-color: #ffff;
+    padding: 0;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:823px){
+    #header-figure{
+        margin-left: 3%;
+        font-size: 1.1em;
+    }
+    #ham{
+        display: none;
+    }
+
+    #mobile-none{
+        /* position: absolute; */
+        /* color: black; */
+        position: unset;
+        /* background-color: pink; */
+        background-color:#fff;
+        margin-left: -45%;
+        padding: 0px 0px;
+        /* margin-top: 0px; */
+        /* height: 200%; */
+        /* width: 80%; */
+        width: 95% !important;
+        z-index:0;
+        display: block;
+        transition: none;
+    }
+    #mobile-none ul{
+        margin-top: 0px;
+        background-color:#fff;
+        margin-left: -45%;
+        width:200%;
+    }
+    /* #mobile-none ul{
+        padding: 10px 0;
+        margin-top: 50px;
+        background-color: black;
+    } */
+    #mobile-none ul li {
+        display: inline;
+        margin:0 5%;
+        background-color: #fff;
+    }
+    #mobile-none ul li a{
+        color: black;
+        text-shadow: none;
+    }
+    #cross {
+        display: none;
+    }
+    h1{
+        margin: 23vh 0 23vh 0;
+    }
+    .skin-care{
+        font-size:2em;
+    }
+    .By{
+        font-size: 1.5em;
+    }
+    .zim-zuh{
+        font-size: 4em !important;
+    }
+    main #pink > div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        transform: skewY(0deg);
+        margin-bottom: 20%;
+
+    }
+    /* main #pink > div{
+        transform: skewY(1deg);
+    } */
+    main #pink > div > div {
+        margin-bottom: 10vh;
+    }
+    main #pink img{
+        width: 50%;
+        height: 60%;
+        margin-left: 25%; /*take note*/
+        transform: skewY(0deg);
+    }
+    main #pink p{
+      text-align: center;
+      transform: skewY(0deg);
+      width:50%;
+      margin-left: 25%;
+    }
+    main #clients{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom:40px;
+        margin-top:-40px;
+    }
+    #clients img{
+        width: 60px;
+        margin-left: 15px;
+        /* margin-bottom: 10px; */
+        margin-bottom: 30px;
+        /* margin-top: 60px; */
+        margin-top: 90px;
+    }
+    #CTA{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    footer .detail > p{
+        width: 20%;
+        margin-left:40% ;
+    }
+    main #pink > div{
+        padding-top: 5%;
+        margin-bottom: 8vh;
+        transform: skewY(2deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:788px) and (max-width:822px){
+    #ham{
+        display: none;
+    }
+
+    #mobile-none{
+        /* position: absolute; */
+        /* color: black; */
+        position: unset;
+        /* background-color: pink; */
+        background-color:#fff;
+        margin-left: 0%;
+        padding: 0px 0px;
+        /* margin-top: 0px; */
+        /* height: 200%; */
+        /* width: 80%; */
+        width: 95% !important;
+        z-index:0;
+        display: block;
+        transition: none;
+    }
+    #mobile-none ul{
+        margin-top: 0px;
+        background-color:#fff;
+        margin-left: -10%;
+        width: 120%;
+    }
+    /* #mobile-none ul{
+        padding: 10px 0;
+        margin-top: 50px;
+        background-color: black;
+    } */
+    #mobile-none ul li {
+        display: inline;
+        margin:0;
+    }
+    #mobile-none ul li a{
+        color: black;
+        text-shadow: none;
+    }
+    #cross {
+        display: none;
+    }
+    h1{
+        margin:15vh 0 15vh 0;
+    }
+    .skin-care{
+        font-size: 1.2em
+    }
+    .By{
+        font-size: 1em
+    }
+    .zim-zuh{
+        font-size: 2.5em!important;
+    }
+    main #pink > div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        transform: skewY(2deg);
+        margin-bottom: 20%;
+
+    }
+    /* main #pink > div{
+        transform: skewY(1deg);
+    } */
+    main #pink img{
+        width: 50%;
+        height: 60%;
+        margin-left: 35%; /*take note*/
+        transform: skewY(0deg);
+    }
+    main #pink p{
+      text-align: center;
+      transform: skewY(0deg);
+      width:50%;
+      margin-left: 35%;
+    }
+    main #clients{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom:40px;
+        margin-top:-40px;
+    }
+    #clients img{
+        width: 60px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        margin-top: 60px;
+    }
+    #CTA{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    footer .detail > p{
+        width: 20%;
+        margin-left:40% ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:768px) and (max-width:787px){
+    #ham{
+        display: none;
+    }
+
+    #mobile-none{
+        /* position: absolute; */
+        /* color: black; */
+        position: unset;
+        /* background-color: pink; */
+        background-color:#fff;
+        margin-left: 0%;
+        padding: 0px 0px;
+        /* margin-top: 0px; */
+        /* height: 200%; */
+        /* width: 80%; */
+        width: 95% !important;
+        z-index:0;
+        display: block;
+        transition: none;
+    }
+    #mobile-none ul{
+        margin-top: 0px;
+        background-color:#fff;
+        margin-left: -60%;
+        width: 170%;
+    }
+    /* #mobile-none ul{
+        padding: 10px 0;
+        margin-top: 50px;
+        background-color: black;
+    } */
+    #mobile-none ul li {
+        display: inline;
+        margin:0 3%;
+    }
+    #mobile-none ul li a{
+        color: black;
+        text-shadow: none;
+    }
+    #cross {
+        display: none;
+    }
+    h1{
+        margin:15vh 0 15vh 0;
+    }
+    .skin-care{
+        font-size: 1.2em
+    }
+    .By{
+        font-size: 1em
+    }
+    .zim-zuh{
+        font-size: 2.5em!important;
+    }
+    main #pink > div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+    main #pink img{
+        width: 30%;
+        margin-left: 35%; /*take note*/
+    }
+    main #pink p{
+      text-align: center;
+    }
+    main #clients{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom:40px;
+        margin-top:-40px;
+    }
+    #clients img{
+        width: 60px;
+        margin-left: 18%;
+        margin-bottom: 10px;
+        margin-top: 60px;
+    }
+    #CTA{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    footer .detail > p{
+        width: 20%;
+        margin-left:40% ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:568px) and (max-width:767px){
+    #ham{
+        display: none;
+    }
+
+    #mobile-none{
+        /* position: absolute; */
+        /* color: black; */
+        position: unset;
+        /* background-color: pink; */
+        background-color:#fff;
+        margin-left: 0%;
+        padding: 0px 0px;
+        /* margin-top: 0px; */
+        /* height: 200%; */
+        /* width: 80%; */
+        width: 95% !important;
+        z-index:0;
+        display: block;
+        transition: none;
+    }
+    #mobile-none ul{
+        margin-top: 0px;
+        background-color:#fff;
+        margin-left: -35%;
+        /* width: 200%; */
+    }
+    /* #mobile-none ul{
+        padding: 10px 0;
+        margin-top: 50px;
+        background-color: black;
+    } */
+    #mobile-none ul li {
+        display: inline;
+        margin:0 1%;
+    }
+    #mobile-none ul li a{
+        color: black;
+        text-shadow: none;
+    }
+    #cross {
+        display: none;
+    }
+    h1{
+        margin:15vh 0 15vh 0;
+    }
+    .skin-care{
+        font-size: 1.2em
+    }
+    .By{
+        font-size: 1em
+    }
+    .zim-zuh{
+        font-size: 2.5em!important;
+    }
+    main #pink > div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+    main #pink img{
+        width: 30%;
+        margin-left: 35%; /*take note*/
+    }
+    main #pink p{
+      text-align: center;
+    }
+    main #clients{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom:40px;
+        margin-top:-40px;
+    }
+    #clients img{
+        width: 60px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        margin-top: 60px;
+    }
+    #CTA{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    footer .detail > p{
+        width: 20%;
+        margin-left:40% ;
+    }
+}
