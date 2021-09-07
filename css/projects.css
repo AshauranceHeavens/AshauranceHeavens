@@ -112,19 +112,15 @@ main .Projects {
   display: flex;
   justify-content: space-around;
   padding: 5px 10%; }
-  main .Projects .project1 {
-    box-shadow: -2px 2px 8px black;
+  main .Projects .project1, main .Projects .project2 {
     position: relative;
     overflow: hidden;
     height: 20vh; }
-    @media only screen and (min-width: 992px) {
-      main .Projects .project1 {
-        box-shadow: -2px 2px 8px white; } }
-    main .Projects .project1:hover a {
+    main .Projects .project1:hover a, main .Projects .project2:hover a {
       top: 0; }
-    main .Projects .project1 img {
+    main .Projects .project1 img, main .Projects .project2 img {
       height: inherit; }
-    main .Projects .project1 a {
+    main .Projects .project1 a, main .Projects .project2 a {
       text-decoration: none;
       color: #fff;
       display: block;
@@ -138,5 +134,13 @@ main .Projects {
       text-align: center;
       width: 100%;
       transition: 0.5s ease; }
+    @media only screen and (min-width: 992px) {
+      main .Projects .project1, main .Projects .project2 {
+        height: 30vh; } }
+  main .Projects .project1 {
+    box-shadow: -2px 2px 8px black !important; }
+    @media only screen and (min-width: 992px) {
+      main .Projects .project1 {
+        box-shadow: -2px 2px 8px black !important; } }
 
 /*# sourceMappingURL=projects.css.map */
