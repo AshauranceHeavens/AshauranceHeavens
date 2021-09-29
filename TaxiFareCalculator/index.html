@@ -50,11 +50,11 @@
         </ul>
       </div>
       </nav>
-      <img src="images/minibus.png" alt="minibus Taxi">
-      <h1>
+      <img src="images/minibus.png" alt="minibus Taxi" class="stagger">
+      <h1 class="stagger">
         Taxi Math Made Easy
       </h1>
-      <p class="subhead">
+      <p class="subhead stagger"">
         Never Run Away From The Front Seat Again
       </p>
     </header>
@@ -62,10 +62,10 @@
     <main>
       <!-- <img src="images/minibus.png" alt="mini bus"> -->
       <div class="main-grid">
-        <video src="images/video1.mp4" controls>
+        <video src="images/video1.mp4" controls class="stagger2">
           video not found
         </video>
-        <p title="taxi fare calculator">
+        <p title="taxi fare calculator" class="stagger2">
           I developed the Taxi fare calculator android mobile app with hope to help
           front seat taxi passengers easily calculate change for the other passangers
           at the back to avoid disturbing the taxi driver which may result in accidents.
@@ -98,5 +98,59 @@
     <script type="text/javascript" src="js/script.js">
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/CSSRulePlugin.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.js">
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.min.js">
+        </script>
+        <script>
+           gsap.registerPlugin(ScrollTrigger);
+
+           var tl = gsap.timeline();
+
+           tl.from(".stagger", {
+             y:-130,
+             stagger: .3,
+             opacity:0,
+             duration:2,
+             ease:Power4.easeOut
+
+           })
+
+           gsap.from(".stagger2", {
+             scrollTrigger: {
+               trigger:'.stagger2',
+               start: "center bottom"
+             },
+             y: 50,
+             opacity: 0,
+             duration:2,
+             stagger: 0.3
+           })
+           gsap.from(".client1", {
+             scrollTrigger: {
+               trigger:'.client1',
+               start: "center bottom"
+             },
+             y: 50,
+             opacity: 0,
+             duration:2,
+             stagger: 0.3
+           })
+
+           gsap.from("#CTA", {
+             scrollTrigger: {
+               trigger:'#CTA',
+               start: "center bottom"
+             },
+             y: 50,
+             opacity: 0,
+             duration:2,
+             stagger: 0.3
+           })
+
+        </script>
   </body>
 </html>
