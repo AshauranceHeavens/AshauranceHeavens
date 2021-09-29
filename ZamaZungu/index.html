@@ -36,14 +36,14 @@
                 </div>
             </div>
            </nav>
-           <h1>
-               <div class="skin-care">
+           <h1 class="stagger">
+               <div class="skin-care stagger">
                    SKIN CARE
                </div>
-               <div class="By">
+               <div class="By stagger">
                    By
                </div>
-               <div class="zim-zuh">
+               <div class="zim-zuh stagger">
                    Zama Zungu
                </div>
            </h1>
@@ -51,14 +51,14 @@
         <main>
             <div id="pink">
                 <div>
-                    <div>
+                    <div class="stagger2">
                         <img src="images/mathilde-langevin-p3O5f4u95Lo-unsplash.jpg" alt="">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ut eum possimus
                         optio accusantium aut dignissimos. Dolorem dolores sint totam?
                     </p>
                     </div>
-                    <div>
+                    <div class="stagger2">
                         <img src="images/valeriia-miller-_42NKYROG7g-unsplash.jpg" alt="">
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ut eum possimus
@@ -66,7 +66,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="stagger2">
                         <img src="images/siora-photography-zot788TQRDU-unsplash.jpg" alt="">
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ut eum possimus
@@ -74,7 +74,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="stagger2">
                         <img src="images/courtney-smith-CqpkodOTgKk-unsplash.jpg" alt="">
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ut eum possimus
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div id="clients">
-                <div>
+                <div class="client1">
                   <a href="https://unsplash.com/@leechinyama?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                     <img src="images/lee-chinyama-VaseTjGGzJw-unsplash.jpg" alt="">
                   </a>
@@ -96,7 +96,7 @@
                         </b>
                     </p>
                 </div>
-                <div>
+                <div class="client1">
                   <a href="https://unsplash.com/@pavelanoshin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                     <img src="images/pavel-anoshin-d0peGya6R5Y-unsplash.jpg" alt="">
                   </a>
@@ -109,7 +109,7 @@
                     </p>
                 </div>
             </div>
-            <div id="CTA">
+            <div id="CTA" >
                 <p>
                     Call or Email now for an order
                 </p>
@@ -134,5 +134,59 @@
             </p>
         </footer>
         <script type="text/javascript" src="script/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/CSSRulePlugin.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.js">
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.min.js">
+        </script>
+        <script>
+           gsap.registerPlugin(ScrollTrigger);
+
+           var tl = gsap.timeline();
+
+           tl.from(".stagger", {
+             y:-130,
+             stagger: .3,
+             opacity:0,
+             duration:2,
+             ease:Power4.easeOut
+
+           })
+
+           gsap.from(".stagger2", {
+             scrollTrigger: {
+               trigger:'.stagger2',
+               start: "center bottom"
+             },
+             y: 50,
+             opacity: 0,
+             duration:2,
+             stagger: 0.3
+           })
+           gsap.from(".client1", {
+             scrollTrigger: {
+               trigger:'.client1',
+               start: "center bottom"
+             },
+             y: 50,
+             opacity: 0,
+             duration:2,
+             stagger: 0.3
+           })
+
+           gsap.from("#CTA", {
+             scrollTrigger: {
+               trigger:'#CTA',
+               start: "center bottom"
+             },
+             y: 50,
+             opacity: 0,
+             duration:2,
+             stagger: 0.3
+           })
+
+        </script>
     </body>
 </html>
