@@ -368,7 +368,9 @@ main #pink .cta img{
   /* height: 85vh; */
   margin-bottom: 3vh;
   margin-top: 15vh;
-  width:60%;
+/*   width:60%; */
+    width:400px !important;
+    height:300px;
   margin-left:20%
 }
 main #pink .cta a{
