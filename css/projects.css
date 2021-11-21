@@ -143,4 +143,43 @@ main .Projects {
       main .Projects .project1 {
         box-shadow: -2px 2px 8px black !important; } }
 
+  main .nelisiwe{
+    display: flex;
+    justify-content: center;
+
+  } 
+  .project3{
+    position: relative;
+    overflow: hidden;
+    height: 20vh; 
+    margin-top: 20px;
+    box-shadow: -2px 2px 8px black !important;}
+
+    @media only screen and (min-width: 992px) {
+     .project3 {
+        height: 30vh; } }
+  
+  .project3:hover a{
+    top: 0;
+    
+  }
+  .nelisiwe a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50% 0 0 0;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s ease; 
+  }
+  .nelisiwe img{
+    width: 100px;
+  }
+
 /*# sourceMappingURL=projects.css.map */
