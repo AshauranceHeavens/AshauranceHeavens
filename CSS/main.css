@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Poppins, monospace; }
+
+html {
+  background-color: #fff;
+  scroll-behavior: smooth; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 2px 2px 5px black; }
+  nav figure {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    nav figure img {
+      margin-right: 7px; }
+    nav figure figcaption {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        nav figure figcaption {
+          display: unset; } }
+  nav #ham .ham .bar {
+    width: 37px;
+    height: 6px;
+    background-color: black;
+    margin-top: 3px; }
+  @media only screen and (min-width: 768px) {
+    nav #ham {
+      display: none; } }
+  nav #mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    left: 100%;
+    width: 70%;
+    transition: 1s ease;
+    z-index: 3; }
+    @media only screen and (min-width: 768px) {
+      nav #mobile {
+        display: none; } }
+    nav #mobile #cross {
+      margin-top: 25px;
+      margin-left: 83%; }
+      nav #mobile #cross .cross-bar {
+        width: 37px;
+        height: 6px;
+        background-color: #fff;
+        margin-top: 6px; }
+      nav #mobile #cross .bar1 {
+        transform: rotate(45deg) translate(1px, 7px); }
+      nav #mobile #cross .bar2 {
+        transform: rotate(-45deg) translate(0px, -7px); }
+    nav #mobile ul {
+      display: block;
+      padding: 20px;
+      background-color: #181818;
+      margin-top: 60px; }
+      nav #mobile ul li {
+        margin-left: 15px;
+        list-style-type: none;
+        text-align: center;
+        margin: 5px 0; }
+        nav #mobile ul li a {
+          text-decoration: none;
+          color: #fff; }
+  nav #Desktop {
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      nav #Desktop {
+        display: flex; } }
+    nav #Desktop ul {
+      display: flex;
+      justify-content: space-around; }
+      nav #Desktop ul li {
+        margin-left: 15px;
+        list-style-type: none; }
+      nav #Desktop ul a {
+        text-decoration: none;
+        color: black; }
+
+.welcome {
+  padding: 75px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px; }
+  @media only screen and (min-width: 768px) {
+    .welcome {
+      height: 70vh; } }
+  .welcome div h1 {
+    font-size: 31px;
+    padding: 0 16%;
+    margin-bottom: 30px; }
+  .welcome div p {
+    padding: 0 10%; }
+
+main .quote {
+  color: #fff;
+  background-color: black;
+  padding: 15px 20px;
+  font-weight: bolder;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  display: none; }
+main #projects {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.973);
+  padding: 70px 10%; }
+  @media only screen and (min-width: 768px) {
+    main #projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 10%; } }
+  main #projects .content {
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      main #projects .content {
+        margin-right: 10%; } }
+  main #projects #box-box {
+    display: flex;
+    justify-content: center; }
+    main #projects #box-box #boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 6px;
+      gap: 25px; }
+      main #projects #box-box #boxes .box {
+        position: relative;
+        margin-top: 20%;
+        overflow: hidden;
+        width: 120px;
+        height: 120px; }
+        main #projects #box-box #boxes .box:hover a {
+          top: 0; }
+        main #projects #box-box #boxes .box img {
+          width: 100%;
+          height: 100%;
+          background-color: #fff; }
+        main #projects #box-box #boxes .box a {
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.8);
+          text-decoration: none;
+          position: absolute;
+          top: 100%;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          font-size: 16px;
+          font-weight: normal;
+          transition: 1s ease; }
+main #languages {
+  padding: 60px 40px; }
+  main #languages h2 {
+    text-align: center; }
+  main #languages .lang {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    padding-left: 8%; }
+    main #languages .lang img {
+      width: 80%; }
+      @media only screen and (min-width: 768px) {
+        main #languages .lang img {
+          width: 50%; } }
+main .hr {
+  display: flex;
+  justify-content: center; }
+  main .hr hr {
+    background-color: black;
+    width: 80%; }
+main #cta {
+  padding: 70px 40px; }
+  main #cta h2 {
+    text-align: center; }
+  main #cta a {
+    display: block;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin-top: 20px;
+    width: 65%;
+    margin-left: 16%; }
+    main #cta a:hover {
+      box-shadow: 2px 2px 8px black; }
+
+footer {
+  color: #fff;
+  padding: 20px 0; }
+  footer .footer {
+    background-color: black;
+    text-align: center;
+    padding: 16px 15%; }
+    footer .footer .contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      footer .footer .contacts a {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 30px; }
+        footer .footer .contacts a img {
+          height: 30px;
+          border-radius: 50px; }
+  footer .developer {
+    color: black;
+    display: grid;
+    place-content: center;
+    padding-top: 14px; }
+    footer .developer span {
+      color: #000; }
+      footer .developer span a {
+        color: black;
+        text-decoration: aliceblue; }
+    footer .developer div {
+      margin-top: 20px; }
+      footer .developer div p {
+        font-size: 16px; }
+        footer .developer div p a {
+          color: #000; }
+
+/*# sourceMappingURL=main.css.map */
