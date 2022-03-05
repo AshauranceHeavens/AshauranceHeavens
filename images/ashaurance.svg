@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="699" height="603" viewBox="0 0 699 603">
+  <g id="Group_4" data-name="Group 4" transform="translate(-702 -119)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(702 119)" fill="#fff" stroke="#060606" stroke-width="30">
+      <rect width="699" height="603" rx="301.5" stroke="none"/>
+      <rect x="15" y="15" width="669" height="573" rx="286.5" fill="none"/>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(34 6)">
+      <g id="Group_2" data-name="Group 2" transform="translate(104 -108)">
+        <g id="Group_1" data-name="Group 1" transform="translate(157)">
+          <text id="A" transform="translate(616 382)" fill="#060606" font-size="200" font-family="SegoeUI-BoldItalic, Segoe UI" font-weight="700" font-style="italic"><tspan x="0" y="216">A</tspan></text>
+          <text id="h" transform="translate(808 346)" fill="#060606" font-size="200" font-family="SegoeUI-BoldItalic, Segoe UI" font-weight="700" font-style="italic"><tspan x="0" y="216">h</tspan></text>
+          <text id="s" transform="translate(737 360)" fill="#060606" font-size="200" font-family="SegoeUI-BoldItalic, Segoe UI" font-weight="700" font-style="italic"><tspan x="0" y="216">s</tspan></text>
+        </g>
+        <g id="Rectangle_2" data-name="Rectangle 2" transform="matrix(0.978, 0.208, -0.208, 0.978, 1022.865, 297.489)" fill="#060606" stroke="#060606" stroke-width="1">
+          <rect width="33" height="188" stroke="none"/>
+          <rect x="0.5" y="0.5" width="32" height="187" fill="none"/>
+        </g>
+      </g>
+      <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(898.309 435.557) rotate(30)" fill="#060606" stroke="#060606" stroke-width="1">
+        <rect width="25.63" height="170" stroke="none"/>
+        <rect x="0.5" y="0.5" width="24.63" height="169" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
