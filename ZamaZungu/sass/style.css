@@ -156,7 +156,7 @@ main #pink > div {
   @media only screen and (min-width: 900px) {
     main #pink > div {
       grid-template-columns: repeat(4, 1fr);
-      align-items: baseline; } }
+     /* align-items: baseline;*/ } }
 
 main #pink {
   /* background: pink; */
