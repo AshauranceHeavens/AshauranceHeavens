@@ -1,3 +1,6 @@
+nav{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
 .images{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(137px, 1fr) );;
