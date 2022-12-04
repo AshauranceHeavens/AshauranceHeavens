@@ -1,0 +1,677 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+// $primary: #fff;
+// $secondary: #000;
+
+$primary: #222831;
+$secondary: #393E46;
+$-original-accent:#D65A31;
+$accent:#ff9d7c;
+$tertiary:#fff;
+
+
+
+@mixin mobile {
+    @media only screen and (min-width: 340px) and (max-width: 649px){
+        @content;
+    }
+}
+
+@mixin mobile-landscape {
+    @media only screen and (min-width: 650px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: 768px){
+        @content;        
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Montserrat, rockwell;
+    // font-size: 1.1em;
+}
+html{
+
+    scroll-behavior: smooth;
+}
+body{
+    // background-color: $primary;
+    background-color: $tertiary;
+}
+#header{
+
+    // background-color: #393E46 !important;
+
+    #header-nav{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        // background-color: $primary;
+        background-color: $accent;
+        position: fixed;
+        width: 100%;
+        // color: $tertiary;
+        color: $primary;
+
+        #header-nav-figure{
+
+            img{
+                display: none;
+            }
+            figcaption{
+
+                font-weight: bold;
+
+                @include mobile-landscape{
+                    margin-left:35%;
+                 }
+            }
+        }
+        
+        div{
+
+
+            #ham{
+
+                .div1, .div2, .div3 {
+                    height:3px;
+                    width: 25px;
+                    margin-top: 3px;
+                    // background-color: black;
+                    // background-color:white;
+                    background-color:$primary;
+                }
+
+                @include mobile-landscape{
+                    display: none;
+                }
+            }
+
+        
+            #desktop-none{
+                display: block;
+                position: fixed;
+                top:0;
+                right: -70%;
+                // background-color: black;
+                background-color: $primary;
+                width:70%;
+                // height:100%;
+                bottom:-10%;
+                padding-top:10%;
+                transition: .2s ease-in-out;
+
+
+                @include mobile-landscape{
+                    position: unset;
+                    padding: unset;
+                    // background-color: #EEEEEE;
+                }
+    
+                #cross{
+                    margin-left: 75%;
+                    margin-bottom: 20%;
+
+                    @include mobile-landscape{
+                        display: none;
+                    }
+        
+                    
+                    .div1, .div2{
+                        background-color: #eee;
+                        width: 27px;
+                        height:5px;
+                    }
+
+                    .div1{
+                        transform: rotate(45deg) translate(3px, -1px);
+                    }
+
+                    .div2{
+                        transform: rotate(-45deg) translate(5px, 0px);
+
+                    }
+                }
+                
+            }
+        }
+    
+      ul{
+        // margin-left:30%;
+        background-color: $secondary;
+        padding:10% 0;
+
+        @include mobile-landscape{
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           background-color: $accent;
+           padding: unset;
+        }
+
+        li{
+            list-style-type: none;
+            margin: 15px auto;
+            text-align: center;
+
+            @include mobile-landscape{
+                margin:5px ;
+             }
+
+            a{
+                // color: $primary;
+                color: #eee;
+                text-decoration: none;
+                font-weight: bold;
+
+                @include mobile-landscape{
+                    //    color:$secondary
+                    // color: $tertiary;
+                    color: $primary
+
+                }
+            }
+        }
+      }
+    }
+
+    #hero{
+        // background-color: $primary;
+        background: linear-gradient(180deg, $primary, $secondary);
+        background: $accent; //delete this
+        background: $accent; //delete this
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // padding-top: 26%;
+        padding-top:110px ;
+        // padding-left: 7%;
+        // padding-right: 7%;
+        padding-bottom: 15%;
+       
+
+        @include mobile-landscape{
+            padding-top:13%;
+        }
+
+      
+        .hero-wrapper{
+            padding:0 20%;
+
+            @include tablet{
+                padding: 0 15%;
+            }
+
+            @include desktop{
+                padding: 0 22%;
+            }
+        }
+
+        .hero-wrapper-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include mobile-landscape{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            
+        }
+        
+        
+        #image{
+            // background-color: black;
+            height: 120px;
+            width: 120px;
+            margin-bottom: 5%;
+            border-radius: 50%;
+            background-image: url(/Sqiniseko/images/sqiniseko.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+
+            @include mobile-landscape{
+                margin-bottom: 0;
+            }
+
+            @include tablet{
+                width:200px;
+                height:200px;
+            }
+    
+        }
+
+        div{
+
+            display: block;
+
+            h1{
+                text-align: center;
+                padding: 10px 0;
+                // color: $accent;
+                color: $primary;
+    
+                @include mobile-landscape{
+                    text-align: left;
+                    // margin-left: 20px;
+                    margin-bottom: 10px;
+                    padding: unset;
+                    width: 120%;
+                }
+
+                @include tablet{
+                  font-size: 43px;
+                  width: 120%;
+                }
+                
+                @include desktop{
+                    // font-size: 50px;
+                    width: 130%;
+                }
+            }
+    
+            #message{
+                padding: 0% 10%;
+    
+                @include mobile-landscape{
+                   padding:unset;
+                }
+                
+                p{
+                    // color: $secondary;
+                    color: $tertiary;
+                    text-align: center;
+    
+                    @include mobile-landscape{
+                        text-align: left;
+                    }
+
+                    @include tablet{
+                        font-size: 21px;
+                        width: 112%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+main{
+    h2{
+        @include tablet{
+            font-size: 2em;
+        }
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 10%;
+    }
+
+    .list-items{
+        // margin-top: 5%;
+        list-style-type: none;
+        text-align: center;
+
+        @include tablet{
+            font-size: 1.3em;
+        }
+    }
+
+    #section-1{
+        color: #EEEEEE !important;
+        // background-image: url('/images/micro.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // background-color: $secondary;
+        background-color: $primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        // display: none;
+        
+        .section-1-container{
+            padding:10% 20px;
+            margin: 0px;
+            // background-color: rgba($color: $secondary, $alpha: 0.9);
+            @include mobile-landscape{
+                padding-bottom: 5%;
+            }
+            @include tablet{
+                padding-bottom: 5%;
+            }
+        }
+
+        .section-1-wrapper{
+
+            @include mobile-landscape{
+                // display: grid;
+                // grid-template-columns: repeat(2, 1fr);
+                // justify-content: space-around;
+                // justify-items: center;
+                // gap:15px;
+                padding: 0 54px;
+            }
+
+            p{
+                @include tablet{
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        
+        h2{
+            margin-bottom: 4%;
+            color:$accent;
+        }
+        
+        div{
+            margin:2% auto;            
+        }
+    }
+
+  
+
+
+    #projects{
+        padding-top: 2%;
+        // padding-bottom: 5%;
+        color:#eee;
+        
+        background-color:  $primary;
+        // background-color:  $secondary;
+
+        h2{
+            text-align: center;
+            margin-bottom: 10%;
+            color:$accent;
+
+            @include mobile-landscape{
+                margin-bottom: 5%;
+            }
+
+            @include tablet{
+                margin-bottom: 5%;
+            }
+        }
+        .my-project{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 7%;
+
+            @include mobile{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            @include mobile-landscape{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+
+            @include desktop{
+                gap:1.5em;
+            }
+            
+            .project1, .project2, .project3, .project4 {
+                background-color: $secondary;
+                height: 125px;
+                width: 125px;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow:0px 0px 6px black;
+                // margin:10%;
+                // border:1px solid rgba($color:$secondary, $alpha: 0.9);
+                @include mobile{
+                    margin: unset;
+                }
+                
+                @include mobile-landscape{
+                    height: 120px;
+                    width: 120px;
+                    margin:0;
+                }
+
+                @include tablet{
+                    height: 164px;
+                    width: 164px;
+                }
+
+                @include desktop{
+                    height: 200px;
+                    width: 200px;
+                }
+                
+                &:hover{
+                    .hover{
+                        margin-top: 0%;
+                    }
+                }
+                
+                .dark{
+                    width: 100%;
+                    height: 100%;
+                    // background-color: rgba($color:$secondary, $alpha: 0.7);
+                    overflow: hidden;
+                }
+                
+
+                .hover{
+                    // background-color: rgba($color:$secondary, $alpha: 0.9);
+                    background-color: rgba($color:$accent, $alpha: 0.9);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 100%;
+                    overflow: hidden;
+                    transition:0.5s ease-in-out;
+                    
+                    
+                    a{
+                        // color:$primary;
+                        color:#000;
+                        text-align: center;
+                    }
+                }
+
+            }
+            .project1{
+                background-image: url('/Sqiniseko/images/theoffcampus.jpg');
+            }
+            .project2{
+                background-image: url('/Sqiniseko/images/app-1.png');
+            }
+            .project3{
+                background-image: url('/Sqiniseko/images/images.png');
+            }
+            .project4{
+                background-image: url('/Sqiniseko/images/nelisiwe.jpg');
+            }
+        }
+    
+    }
+
+    .hr{
+        display: flex;
+        justify-content: center;
+        background-color: #393E46;
+        padding:15px 0px;
+        display: none;
+
+        hr{
+            width: 70%;
+            background-color: #D65A31;
+        }
+    }
+
+    .call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em 0;
+        // background-color: $accent;
+        background-color: #eee;
+        // color:white;
+        color:$primary;
+
+        @include mobile-landscape{
+            padding:2.5em 0;
+        }
+
+       
+        h2{
+            margin:5px;
+        }
+
+        h3{
+            @include tablet{
+                font-size: 1.3em;
+            }
+
+            a{
+                // color:$tertiary;
+                color:$-original-accent;
+                text-decoration: none;
+            }
+        }
+
+        form{
+            padding: 10%;
+            width: 100%;
+            display: none;
+            div{
+                display: flex;
+                flex-direction: column;
+                margin:5% 0;
+
+                input{
+                    border-radius: 5%;
+                    border: 2px solid $secondary;
+                    padding: 4px 0;
+                }
+
+                textarea{
+                    border: 2px solid $secondary;
+                    // padding: 4px 0;
+                }
+            }
+        }
+
+        .call-button{
+            color: $primary;
+            background-color: $secondary;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius:5px;
+        }
+    }
+}
+
+footer{
+    // padding:5% 0;
+    background-color: #393E46;
+
+    div{
+        background-color: $primary;
+        padding: 1em 6%;
+
+        @include mobile-landscape {
+            padding:1.5em 6%;
+        }
+
+        .wrapper{
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 0;
+            
+            .call{
+                background-image: url(/Sqiniseko/images/call1.svg);
+            }
+            .email{
+                background-image: url(/Sqiniseko/images/email1.svg);
+            }
+
+            .facebook{
+                background-image: url(/Sqiniseko/images/facebook1.svg);
+            }
+            .whatsapp{
+                background-image: url(/Sqiniseko/images/whatsapp1.svg);
+            }
+
+            img{
+                width:50px;
+                height:50px;
+                display: none;
+            }
+        }
+
+        .img{
+            background-color: #fff;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            // background-image: url(/Sqiniseko/images/whatsapp1.svg);
+        }
+
+        a{
+            color:white;
+            // display: block;
+        }
+        
+        p{
+            color: white;
+            // display: none;
+            padding-top: 10%;
+            text-align: center;
+        }
+    }
+
+    p{
+      color: black;
+      color: white;
+      text-align: center;
+    //   margin: 5% 0;
+      padding: 1em;
+
+      @include mobile-landscape {
+        padding:1.5em 6%;
+      }
+    }
+}

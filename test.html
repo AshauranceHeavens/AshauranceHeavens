@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                
+        #image{
+            background-color: black;
+            height: 120px;
+            width: 120px;
+            margin-bottom: 5%;
+            border-radius: 50%;
+            background-image: url(/Sqiniseko/images/sqiniseko.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        @media only screen and (min-width:650px)  {
+            #image{
+                margin-bottom:5px;
+            }
+        }
+        
+        #hero{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* background-color: red; */
+            padding: 10%;
+            
+        }
+        #hero h1{
+            color:#154741;
+;
+        }
+        .hero-wrapper-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: purple; */
+        }
+
+        @media only screen and (min-width:650px)  {
+            .hero-wrapper-container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 10%;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="hero">
+        <div class="hero-wrapper">
+            <div class="hero-wrapper-container">
+                <div id="image">
+                </div> 
+                <div>
+                    <h1>
+                     Thabiso Sqiniseko Zulu
+                    </h1>
+                    <div id="message">
+                     <p>
+                        I am a Microbiologist, a developer and a 
+                        learner with the desire to grow
+                     </p>
+                    </div>
+    
+                </div> 
+            </div>   
+        </div>
+        
+    </div>
+</body>
+</html>

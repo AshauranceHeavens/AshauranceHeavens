@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, rockwell; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #fff; }
+
+#header #header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ff9d7c;
+  position: fixed;
+  width: 100%;
+  color: #222831; }
+  #header #header-nav #header-nav-figure img {
+    display: none; }
+  #header #header-nav #header-nav-figure figcaption {
+    font-weight: bold; }
+    @media only screen and (min-width: 650px) {
+      #header #header-nav #header-nav-figure figcaption {
+        margin-left: 35%; } }
+  #header #header-nav div #ham .div1, #header #header-nav div #ham .div2, #header #header-nav div #ham .div3 {
+    height: 3px;
+    width: 25px;
+    margin-top: 3px;
+    background-color: #222831; }
+  @media only screen and (min-width: 650px) {
+    #header #header-nav div #ham {
+      display: none; } }
+  #header #header-nav div #desktop-none {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -70%;
+    background-color: #222831;
+    width: 70%;
+    bottom: -10%;
+    padding-top: 10%;
+    transition: .2s ease-in-out; }
+    @media only screen and (min-width: 650px) {
+      #header #header-nav div #desktop-none {
+        position: unset;
+        padding: unset; } }
+    #header #header-nav div #desktop-none #cross {
+      margin-left: 75%;
+      margin-bottom: 20%; }
+      @media only screen and (min-width: 650px) {
+        #header #header-nav div #desktop-none #cross {
+          display: none; } }
+      #header #header-nav div #desktop-none #cross .div1, #header #header-nav div #desktop-none #cross .div2 {
+        background-color: #eee;
+        width: 27px;
+        height: 5px; }
+      #header #header-nav div #desktop-none #cross .div1 {
+        transform: rotate(45deg) translate(3px, -1px); }
+      #header #header-nav div #desktop-none #cross .div2 {
+        transform: rotate(-45deg) translate(5px, 0px); }
+  #header #header-nav ul {
+    background-color: #393E46;
+    padding: 10% 0; }
+    @media only screen and (min-width: 650px) {
+      #header #header-nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #ff9d7c;
+        padding: unset; } }
+    #header #header-nav ul li {
+      list-style-type: none;
+      margin: 15px auto;
+      text-align: center; }
+      @media only screen and (min-width: 650px) {
+        #header #header-nav ul li {
+          margin: 5px; } }
+      #header #header-nav ul li a {
+        color: #eee;
+        text-decoration: none;
+        font-weight: bold; }
+        @media only screen and (min-width: 650px) {
+          #header #header-nav ul li a {
+            color: #222831; } }
+#header #hero {
+  background: linear-gradient(180deg, #222831, #393E46);
+  background: #ff9d7c;
+  background: #ff9d7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 110px;
+  padding-bottom: 15%; }
+  @media only screen and (min-width: 650px) {
+    #header #hero {
+      padding-top: 13%; } }
+  #header #hero .hero-wrapper {
+    padding: 0 20%; }
+    @media only screen and (min-width: 768px) {
+      #header #hero .hero-wrapper {
+        padding: 0 15%; } }
+    @media only screen and (min-width: 1024px) {
+      #header #hero .hero-wrapper {
+        padding: 0 22%; } }
+  #header #hero .hero-wrapper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media only screen and (min-width: 650px) {
+      #header #hero .hero-wrapper-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        justify-content: space-around; } }
+  #header #hero #image {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    background-image: url(/Sqiniseko/images/sqiniseko.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; }
+    @media only screen and (min-width: 650px) {
+      #header #hero #image {
+        margin-bottom: 0; } }
+    @media only screen and (min-width: 768px) {
+      #header #hero #image {
+        width: 200px;
+        height: 200px; } }
+  #header #hero div {
+    display: block; }
+    #header #hero div h1 {
+      text-align: center;
+      padding: 10px 0;
+      color: #222831; }
+      @media only screen and (min-width: 650px) {
+        #header #hero div h1 {
+          text-align: left;
+          margin-bottom: 10px;
+          padding: unset;
+          width: 120%; } }
+      @media only screen and (min-width: 768px) {
+        #header #hero div h1 {
+          font-size: 43px;
+          width: 120%; } }
+      @media only screen and (min-width: 1024px) {
+        #header #hero div h1 {
+          width: 130%; } }
+    #header #hero div #message {
+      padding: 0% 10%; }
+      @media only screen and (min-width: 650px) {
+        #header #hero div #message {
+          padding: unset; } }
+      #header #hero div #message p {
+        color: #fff;
+        text-align: center; }
+        @media only screen and (min-width: 650px) {
+          #header #hero div #message p {
+            text-align: left; } }
+        @media only screen and (min-width: 768px) {
+          #header #hero div #message p {
+            font-size: 21px;
+            width: 112%; } }
+
+@media only screen and (min-width: 768px) {
+  main h2 {
+    font-size: 2em; } }
+main .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+main .list-items {
+  list-style-type: none;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    main .list-items {
+      font-size: 1.3em; } }
+main #section-1 {
+  color: #EEEEEE !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+  main #section-1 .section-1-container {
+    padding: 10% 20px;
+    margin: 0px; }
+    @media only screen and (min-width: 650px) {
+      main #section-1 .section-1-container {
+        padding-bottom: 5%; } }
+    @media only screen and (min-width: 768px) {
+      main #section-1 .section-1-container {
+        padding-bottom: 5%; } }
+  @media only screen and (min-width: 650px) {
+    main #section-1 .section-1-wrapper {
+      padding: 0 54px; } }
+  @media only screen and (min-width: 768px) {
+    main #section-1 .section-1-wrapper p {
+      font-size: 1.3em; } }
+  main #section-1 h2 {
+    margin-bottom: 4%;
+    color: #ff9d7c; }
+  main #section-1 div {
+    margin: 2% auto; }
+main #projects {
+  padding-top: 2%;
+  color: #eee;
+  background-color: #222831; }
+  main #projects h2 {
+    text-align: center;
+    margin-bottom: 10%;
+    color: #ff9d7c; }
+    @media only screen and (min-width: 650px) {
+      main #projects h2 {
+        margin-bottom: 5%; } }
+    @media only screen and (min-width: 768px) {
+      main #projects h2 {
+        margin-bottom: 5%; } }
+  main #projects .my-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7%; }
+    @media only screen and (min-width: 340px) and (max-width: 649px) {
+      main #projects .my-project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px; } }
+    @media only screen and (min-width: 650px) {
+      main #projects .my-project {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px; } }
+    @media only screen and (min-width: 1024px) {
+      main #projects .my-project {
+        gap: 1.5em; } }
+    main #projects .my-project .project1, main #projects .my-project .project2, main #projects .my-project .project3, main #projects .my-project .project4 {
+      background-color: #393E46;
+      height: 125px;
+      width: 125px;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px 0px 6px black; }
+      @media only screen and (min-width: 340px) and (max-width: 649px) {
+        main #projects .my-project .project1, main #projects .my-project .project2, main #projects .my-project .project3, main #projects .my-project .project4 {
+          margin: unset; } }
+      @media only screen and (min-width: 650px) {
+        main #projects .my-project .project1, main #projects .my-project .project2, main #projects .my-project .project3, main #projects .my-project .project4 {
+          height: 120px;
+          width: 120px;
+          margin: 0; } }
+      @media only screen and (min-width: 768px) {
+        main #projects .my-project .project1, main #projects .my-project .project2, main #projects .my-project .project3, main #projects .my-project .project4 {
+          height: 164px;
+          width: 164px; } }
+      @media only screen and (min-width: 1024px) {
+        main #projects .my-project .project1, main #projects .my-project .project2, main #projects .my-project .project3, main #projects .my-project .project4 {
+          height: 200px;
+          width: 200px; } }
+      main #projects .my-project .project1:hover .hover, main #projects .my-project .project2:hover .hover, main #projects .my-project .project3:hover .hover, main #projects .my-project .project4:hover .hover {
+        margin-top: 0%; }
+      main #projects .my-project .project1 .dark, main #projects .my-project .project2 .dark, main #projects .my-project .project3 .dark, main #projects .my-project .project4 .dark {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+      main #projects .my-project .project1 .hover, main #projects .my-project .project2 .hover, main #projects .my-project .project3 .hover, main #projects .my-project .project4 .hover {
+        background-color: rgba(255, 157, 124, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 100%;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; }
+        main #projects .my-project .project1 .hover a, main #projects .my-project .project2 .hover a, main #projects .my-project .project3 .hover a, main #projects .my-project .project4 .hover a {
+          color: #000;
+          text-align: center; }
+    main #projects .my-project .project1 {
+      background-image: url("/Sqiniseko/images/theoffcampus.jpg"); }
+    main #projects .my-project .project2 {
+      background-image: url("/Sqiniseko/images/app-1.png"); }
+    main #projects .my-project .project3 {
+      background-image: url("/Sqiniseko/images/images.png"); }
+    main #projects .my-project .project4 {
+      background-image: url("/Sqiniseko/images/nelisiwe.jpg"); }
+main .hr {
+  display: flex;
+  justify-content: center;
+  background-color: #393E46;
+  padding: 15px 0px;
+  display: none; }
+  main .hr hr {
+    width: 70%;
+    background-color: #D65A31; }
+main .call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em 0;
+  background-color: #eee;
+  color: #222831; }
+  @media only screen and (min-width: 650px) {
+    main .call {
+      padding: 2.5em 0; } }
+  main .call h2 {
+    margin: 5px; }
+  @media only screen and (min-width: 768px) {
+    main .call h3 {
+      font-size: 1.3em; } }
+  main .call h3 a {
+    color: #D65A31;
+    text-decoration: none; }
+  main .call form {
+    padding: 10%;
+    width: 100%;
+    display: none; }
+    main .call form div {
+      display: flex;
+      flex-direction: column;
+      margin: 5% 0; }
+      main .call form div input {
+        border-radius: 5%;
+        border: 2px solid #393E46;
+        padding: 4px 0; }
+      main .call form div textarea {
+        border: 2px solid #393E46; }
+  main .call .call-button {
+    color: #222831;
+    background-color: #393E46;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px; }
+
+footer {
+  background-color: #393E46; }
+  footer div {
+    background-color: #222831;
+    padding: 1em 6%; }
+    @media only screen and (min-width: 650px) {
+      footer div {
+        padding: 1.5em 6%; } }
+    footer div .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0; }
+      footer div .wrapper .call {
+        background-image: url(/Sqiniseko/images/call1.svg); }
+      footer div .wrapper .email {
+        background-image: url(/Sqiniseko/images/email1.svg); }
+      footer div .wrapper .facebook {
+        background-image: url(/Sqiniseko/images/facebook1.svg); }
+      footer div .wrapper .whatsapp {
+        background-image: url(/Sqiniseko/images/whatsapp1.svg); }
+      footer div .wrapper img {
+        width: 50px;
+        height: 50px;
+        display: none; }
+    footer div .img {
+      background-color: #fff;
+      border-radius: 100%;
+      height: 30px;
+      width: 30px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    footer div a {
+      color: white; }
+    footer div p {
+      color: white;
+      padding-top: 10%;
+      text-align: center; }
+  footer p {
+    color: black;
+    color: white;
+    text-align: center;
+    padding: 1em; }
+    @media only screen and (min-width: 650px) {
+      footer p {
+        padding: 1.5em 6%; } }
+
+/*# sourceMappingURL=main.css.map */
