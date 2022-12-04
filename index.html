@@ -202,50 +202,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.min.js">
     </script>
     <script>
-       gsap.registerPlugin(ScrollTrigger);
+//        gsap.registerPlugin(ScrollTrigger);
 
-       var tl = gsap.timeline();
+//        var tl = gsap.timeline();
 
-       tl.from(".stagger", {
-         y:-130,
-         stagger: .3,
-         opacity:0,
-         duration:2,
-         ease:Power4.easeOut
+//        tl.from(".stagger", {
+//          y:-130,
+//          stagger: .3,
+//          opacity:0,
+//          duration:2,
+//          ease:Power4.easeOut
 
-       })
+//        })
 
-       gsap.from(".stagger2", {
-         scrollTrigger: {
-           trigger:'.stagger2',
-           start: "center bottom"
-         },
-         y: 50,
-         opacity: 0,
-         duration:2,
-         stagger: 0.3
-       })
-       gsap.from(".client1", {
-         scrollTrigger: {
-           trigger:'.client1',
-           start: "center bottom"
-         },
-         y: 50,
-         opacity: 0,
-         duration:2,
-         stagger: 0.3
-       })
+//        gsap.from(".stagger2", {
+//          scrollTrigger: {
+//            trigger:'.stagger2',
+//            start: "center bottom"
+//          },
+//          y: 50,
+//          opacity: 0,
+//          duration:2,
+//          stagger: 0.3
+//        })
+//        gsap.from(".client1", {
+//          scrollTrigger: {
+//            trigger:'.client1',
+//            start: "center bottom"
+//          },
+//          y: 50,
+//          opacity: 0,
+//          duration:2,
+//          stagger: 0.3
+//        })
 
-       gsap.from(".stagger3", {
-         scrollTrigger: {
-           trigger:'.stagger3',
-           start: "center bottom"
-         },
-         y: 50,
-         opacity: 0,
-         duration:2,
-         stagger: 0.3
-       })
+//        gsap.from(".stagger3", {
+//          scrollTrigger: {
+//            trigger:'.stagger3',
+//            start: "center bottom"
+//          },
+//          y: 50,
+//          opacity: 0,
+//          duration:2,
+//          stagger: 0.3
+//        })
 
     </script>
 </body>
