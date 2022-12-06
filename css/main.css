@@ -95,7 +95,9 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 110px;
-  padding-bottom: 15%; }
+  padding-bottom: 15%;
+  position: relative;
+  z-index: -1; }
   @media only screen and (min-width: 650px) {
     #header #hero {
       padding-top: 13%; } }
@@ -201,12 +203,14 @@ main #section-1 {
     @media only screen and (min-width: 768px) {
       main #section-1 .section-1-container {
         padding-bottom: 5%; } }
-  @media only screen and (min-width: 650px) {
-    main #section-1 .section-1-wrapper {
-      padding: 0 54px; } }
-  @media only screen and (min-width: 768px) {
-    main #section-1 .section-1-wrapper p {
-      font-size: 1.3em; } }
+  main #section-1 .section-1-wrapper {
+    padding: 0 10%; }
+    @media only screen and (min-width: 650px) {
+      main #section-1 .section-1-wrapper {
+        padding: 0 54px; } }
+    @media only screen and (min-width: 768px) {
+      main #section-1 .section-1-wrapper p {
+        font-size: 1.3em; } }
   main #section-1 h2 {
     margin-bottom: 4%;
     color: #ff9d7c; }

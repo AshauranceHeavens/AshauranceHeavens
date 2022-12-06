@@ -204,6 +204,8 @@ body{
         // padding-left: 7%;
         // padding-right: 7%;
         padding-bottom: 15%;
+        position: relative;
+        z-index: -1;
        
 
         @include mobile-landscape{
@@ -368,6 +370,7 @@ main{
         }
 
         .section-1-wrapper{
+            padding: 0 10%;
 
             @include mobile-landscape{
                 // display: grid;
