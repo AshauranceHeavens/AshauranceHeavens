@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +24,7 @@ body {
   #header #header-nav #header-nav-figure img {
     display: none; }
   #header #header-nav #header-nav-figure figcaption {
+    font-family: Pacifico;
     font-weight: bold; }
     @media only screen and (min-width: 650px) {
       #header #header-nav #header-nav-figure figcaption {

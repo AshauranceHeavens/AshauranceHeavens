@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 // $primary: #fff;
 // $secondary: #000;
 
@@ -74,7 +75,7 @@ body{
                 display: none;
             }
             figcaption{
-
+                font-family: Pacifico;
                 font-weight: bold;
 
                 @include mobile-landscape{
