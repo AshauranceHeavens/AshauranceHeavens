@@ -258,7 +258,8 @@ main #projects {
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: 0px 0px 6px black; }
+      box-shadow: 0px 0px 6px black;
+      margin-bottom: 10%; }
       @media only screen and (min-width: 340px) and (max-width: 649px) {
         main #projects .my-project .project1, main #projects .my-project .project2, main #projects .my-project .project3, main #projects .my-project .project4 {
           margin: unset; } }
