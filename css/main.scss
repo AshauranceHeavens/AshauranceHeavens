@@ -45,12 +45,11 @@ $tertiary:#fff;
     // font-size: 1.1em;
 }
 html{
-
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 body{
-    // background-color: $primary;
-    background-color: $tertiary;
+    background-color: $primary;
+    // background-color: $tertiary;
 }
 #header{
 
@@ -68,6 +67,11 @@ body{
         width: 100%;
         // color: $tertiary;
         color: $primary;
+        z-index:2;
+
+        @include desktop{
+            font-size: 22px;
+        }
 
         #header-nav-figure{
 
@@ -77,6 +81,9 @@ body{
             figcaption{
                 font-family: Pacifico;
                 font-weight: bold;
+                // color:#fff;
+                // text-shadow:0px 0px 5px black;
+
 
                 @include mobile-landscape{
                     margin-left:35%;
@@ -85,17 +92,15 @@ body{
         }
         
         div{
-
-
             #ham{
-
                 .div1, .div2, .div3 {
                     height:3px;
                     width: 25px;
                     margin-top: 3px;
-                    // background-color: black;
-                    // background-color:white;
                     background-color:$primary;
+                    // background-color:#fff;
+                    // box-shadow:0px 0px 2px black;
+
                 }
 
                 @include mobile-landscape{
@@ -169,9 +174,19 @@ body{
             list-style-type: none;
             margin: 15px auto;
             text-align: center;
+            padding:4px 8px;
 
             @include mobile-landscape{
                 margin:5px ;
+                &:hover{
+                    // background-color: $primary;
+                    box-shadow: 3px 2px 5px $primary;
+                    border-radius: 5px;
+                }
+             }
+
+             @include desktop{
+                margin:5px 15px;
              }
 
             a{
@@ -183,7 +198,10 @@ body{
                 @include mobile-landscape{
                     //    color:$secondary
                     // color: $tertiary;
-                    color: $primary
+                    color: $primary;
+                    // &:hover{
+                    //     // color:#fff;
+                    // }
 
                 }
             }
@@ -192,21 +210,15 @@ body{
     }
 
     #hero{
-        // background-color: $primary;
-        background: linear-gradient(180deg, $primary, $secondary);
-        background: $accent; //delete this
+        // background: linear-gradient(180deg, $primary, $secondary);
         background: $accent; //delete this
         display: flex;
-        // flex-direction: column;
         justify-content: center;
         align-items: center;
-        // padding-top: 26%;
         padding-top:110px ;
-        // padding-left: 7%;
-        // padding-right: 7%;
         padding-bottom: 15%;
         position: relative;
-        z-index: -1;
+        // z-index: -1;
        
 
         @include mobile-landscape{
@@ -222,7 +234,7 @@ body{
             }
 
             @include desktop{
-                padding: 0 22%;
+                padding: 0 12%;
             }
         }
 
@@ -237,7 +249,6 @@ body{
                 flex-direction: row;
                 justify-content: space-around;
             }
-
             
         }
         
@@ -248,7 +259,8 @@ body{
             width: 120px;
             margin-bottom: 5%;
             border-radius: 50%;
-            background-image: url(/images/sqiniseko.jpg);
+            // background-image: url(/images/sqiniseko.jpg);
+            background-image: url(/images/Sqiniseko-bg.png);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top;
@@ -261,18 +273,26 @@ body{
                 width:200px;
                 height:200px;
             }
+
+            @include desktop{
+                width:300px;
+                height:300px;
+            }
     
         }
 
         div{
 
             display: block;
-
+            text-shadow:0px 0px 5px black;
+            
             h1{
                 text-align: center;
                 padding: 10px 0;
                 // color: $accent;
-                color: $primary;
+                // color: $primary;
+                color: $tertiary;
+                font-weight: bolder;
     
                 @include mobile-landscape{
                     text-align: left;
@@ -289,7 +309,9 @@ body{
                 
                 @include desktop{
                     // font-size: 50px;
-                    width: 130%;
+                    // width: 130%;
+                    width: 120%;
+                    font-size:75px;
                 }
             }
     
@@ -301,8 +323,8 @@ body{
                 }
                 
                 p{
-                    // color: $secondary;
                     color: $tertiary;
+                    // color: $secondary;
                     text-align: center;
     
                     @include mobile-landscape{
@@ -313,6 +335,29 @@ body{
                         font-size: 21px;
                         width: 112%;
                     }
+
+                    @include desktop{
+                        // font-size: 50px;
+                        width: 107%;
+                        font-size:27px;
+                    }
+                }
+            }
+
+            a{
+                color:#fff;
+                background:$primary;
+                text-decoration:none;
+                display:block;
+                margin:16px auto;
+                padding:8px 3px;
+                text-align:center;
+                border-radius:5px;
+                font-weight: bold;
+
+                @include desktop{
+                    padding:12px 3px;
+                    font-size: 19px;
                 }
             }
         }
@@ -321,6 +366,10 @@ body{
 }
 
 main{
+    @include desktop{
+        font-size: 20px;
+    }
+
     h2{
         @include tablet{
             font-size: 2em;
@@ -383,17 +432,36 @@ main{
             }
 
             p{
+                text-align:justify;
+                margin:13px auto;
+
+                // @include mobile-landscape{
+                //     text-align: center;
+                // }
+    
+
                 @include tablet{
                     font-size: 1.3em;
+                    text-align: center;
                 }
             }
+
         }
 
         
         h2{
             margin-bottom: 4%;
             color:$accent;
+            // color:red;
         }
+
+        h3{
+            color:#fff;
+        }
+
+        // .section-1-header{
+        //     // text-align: left;
+        // }
         
         div{
             margin:2% auto;            
@@ -405,11 +473,8 @@ main{
 
     #projects{
         padding-top: 2%;
-        // padding-bottom: 5%;
         color:#eee;
-        
         background-color:  $primary;
-        // background-color:  $secondary;
 
         h2{
             text-align: center;
@@ -430,14 +495,15 @@ main{
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            margin-bottom: 7%;
-
+            // margin-bottom: 7%;
+            
             @include mobile{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 15px;
             }
             @include mobile-landscape{
+                margin-bottom: 0%;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 10px;
@@ -531,7 +597,7 @@ main{
     .hr{
         display: flex;
         justify-content: center;
-        background-color: #393E46;
+        // background-color: #393E46;
         padding:15px 0px;
         display: none;
 
@@ -546,13 +612,15 @@ main{
         flex-direction: column;
         align-items: center;
         padding: 1.5em 0;
-        // background-color: $accent;
         background-color: #eee;
+        background-color: $primary;
         // color:white;
-        color:$primary;
+        color:#eee;
+        margin:7% auto;
 
         @include mobile-landscape{
             padding:2.5em 0;
+            margin:3% auto;
         }
 
        
@@ -566,9 +634,14 @@ main{
             }
 
             a{
-                // color:$tertiary;
-                color:$-original-accent;
+                // color:$primary;
+                color:#fff;
+                text-shadow:0px 0px 5px black;
+                font-weight: bold;
+                background-color: $accent;
                 text-decoration: none;
+                padding:6px 9.5px;
+                border-radius:3px;
             }
         }
 
@@ -600,16 +673,17 @@ main{
             text-decoration: none;
             padding: 5px 10px;
             border-radius:5px;
+
         }
     }
 }
 
 footer{
     // padding:5% 0;
-    background-color: #393E46;
-
+    background-color: $primary;
+    
     div{
-        background-color: $primary;
+        background-color: #393E46;
         padding: 1em 6%;
 
         @include mobile-landscape {
@@ -668,7 +742,7 @@ footer{
     }
 
     p{
-      color: black;
+    //   color: black;
       color: white;
       text-align: center;
     //   margin: 5% 0;

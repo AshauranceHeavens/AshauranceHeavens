@@ -7,10 +7,10 @@
   font-family: Montserrat, rockwell; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth !important; }
 
 body {
-  background-color: #fff; }
+  background-color: #222831; }
 
 #header #header-nav {
   display: flex;
@@ -20,7 +20,11 @@ body {
   background-color: #ff9d7c;
   position: fixed;
   width: 100%;
-  color: #222831; }
+  color: #222831;
+  z-index: 2; }
+  @media only screen and (min-width: 1024px) {
+    #header #header-nav {
+      font-size: 22px; } }
   #header #header-nav #header-nav-figure img {
     display: none; }
   #header #header-nav #header-nav-figure figcaption {
@@ -78,10 +82,17 @@ body {
     #header #header-nav ul li {
       list-style-type: none;
       margin: 15px auto;
-      text-align: center; }
+      text-align: center;
+      padding: 4px 8px; }
       @media only screen and (min-width: 650px) {
         #header #header-nav ul li {
-          margin: 5px; } }
+          margin: 5px; }
+          #header #header-nav ul li:hover {
+            box-shadow: 3px 2px 5px #222831;
+            border-radius: 5px; } }
+      @media only screen and (min-width: 1024px) {
+        #header #header-nav ul li {
+          margin: 5px 15px; } }
       #header #header-nav ul li a {
         color: #eee;
         text-decoration: none;
@@ -90,16 +101,13 @@ body {
           #header #header-nav ul li a {
             color: #222831; } }
 #header #hero {
-  background: linear-gradient(180deg, #222831, #393E46);
-  background: #ff9d7c;
   background: #ff9d7c;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 110px;
   padding-bottom: 15%;
-  position: relative;
-  z-index: -1; }
+  position: relative; }
   @media only screen and (min-width: 650px) {
     #header #hero {
       padding-top: 13%; } }
@@ -110,7 +118,7 @@ body {
         padding: 0 15%; } }
     @media only screen and (min-width: 1024px) {
       #header #hero .hero-wrapper {
-        padding: 0 22%; } }
+        padding: 0 12%; } }
   #header #hero .hero-wrapper-container {
     display: flex;
     flex-direction: column;
@@ -126,7 +134,7 @@ body {
     width: 120px;
     margin-bottom: 5%;
     border-radius: 50%;
-    background-image: url(/images/sqiniseko.jpg);
+    background-image: url(/images/Sqiniseko-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top; }
@@ -137,12 +145,18 @@ body {
       #header #hero #image {
         width: 200px;
         height: 200px; } }
+    @media only screen and (min-width: 1024px) {
+      #header #hero #image {
+        width: 300px;
+        height: 300px; } }
   #header #hero div {
-    display: block; }
+    display: block;
+    text-shadow: 0px 0px 5px black; }
     #header #hero div h1 {
       text-align: center;
       padding: 10px 0;
-      color: #222831; }
+      color: #fff;
+      font-weight: bolder; }
       @media only screen and (min-width: 650px) {
         #header #hero div h1 {
           text-align: left;
@@ -155,7 +169,8 @@ body {
           width: 120%; } }
       @media only screen and (min-width: 1024px) {
         #header #hero div h1 {
-          width: 130%; } }
+          width: 120%;
+          font-size: 75px; } }
     #header #hero div #message {
       padding: 0% 10%; }
       @media only screen and (min-width: 650px) {
@@ -171,7 +186,28 @@ body {
           #header #hero div #message p {
             font-size: 21px;
             width: 112%; } }
+        @media only screen and (min-width: 1024px) {
+          #header #hero div #message p {
+            width: 107%;
+            font-size: 27px; } }
+    #header #hero div a {
+      color: #fff;
+      background: #222831;
+      text-decoration: none;
+      display: block;
+      margin: 16px auto;
+      padding: 8px 3px;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold; }
+      @media only screen and (min-width: 1024px) {
+        #header #hero div a {
+          padding: 12px 3px;
+          font-size: 19px; } }
 
+@media only screen and (min-width: 1024px) {
+  main {
+    font-size: 20px; } }
 @media only screen and (min-width: 768px) {
   main h2 {
     font-size: 2em; } }
@@ -210,12 +246,18 @@ main #section-1 {
     @media only screen and (min-width: 650px) {
       main #section-1 .section-1-wrapper {
         padding: 0 54px; } }
-    @media only screen and (min-width: 768px) {
-      main #section-1 .section-1-wrapper p {
-        font-size: 1.3em; } }
+    main #section-1 .section-1-wrapper p {
+      text-align: justify;
+      margin: 13px auto; }
+      @media only screen and (min-width: 768px) {
+        main #section-1 .section-1-wrapper p {
+          font-size: 1.3em;
+          text-align: center; } }
   main #section-1 h2 {
     margin-bottom: 4%;
     color: #ff9d7c; }
+  main #section-1 h3 {
+    color: #fff; }
   main #section-1 div {
     margin: 2% auto; }
 main #projects {
@@ -236,8 +278,7 @@ main #projects {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 7%; }
+    align-items: center; }
     @media only screen and (min-width: 340px) and (max-width: 649px) {
       main #projects .my-project {
         display: grid;
@@ -245,6 +286,7 @@ main #projects {
         gap: 15px; } }
     @media only screen and (min-width: 650px) {
       main #projects .my-project {
+        margin-bottom: 0%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px; } }
@@ -306,7 +348,6 @@ main #projects {
 main .hr {
   display: flex;
   justify-content: center;
-  background-color: #393E46;
   padding: 15px 0px;
   display: none; }
   main .hr hr {
@@ -318,18 +359,26 @@ main .call {
   align-items: center;
   padding: 1.5em 0;
   background-color: #eee;
-  color: #222831; }
+  background-color: #222831;
+  color: #eee;
+  margin: 7% auto; }
   @media only screen and (min-width: 650px) {
     main .call {
-      padding: 2.5em 0; } }
+      padding: 2.5em 0;
+      margin: 3% auto; } }
   main .call h2 {
     margin: 5px; }
   @media only screen and (min-width: 768px) {
     main .call h3 {
       font-size: 1.3em; } }
   main .call h3 a {
-    color: #D65A31;
-    text-decoration: none; }
+    color: #fff;
+    text-shadow: 0px 0px 5px black;
+    font-weight: bold;
+    background-color: #ff9d7c;
+    text-decoration: none;
+    padding: 6px 9.5px;
+    border-radius: 3px; }
   main .call form {
     padding: 10%;
     width: 100%;
@@ -352,9 +401,9 @@ main .call {
     border-radius: 5px; }
 
 footer {
-  background-color: #393E46; }
+  background-color: #222831; }
   footer div {
-    background-color: #222831;
+    background-color: #393E46;
     padding: 1em 6%; }
     @media only screen and (min-width: 650px) {
       footer div {
@@ -391,7 +440,6 @@ footer {
       padding-top: 10%;
       text-align: center; }
   footer p {
-    color: black;
     color: white;
     text-align: center;
     padding: 1em; }
