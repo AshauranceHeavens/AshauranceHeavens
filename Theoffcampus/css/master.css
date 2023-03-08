@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,8 +17,12 @@ body {
       justify-content: space-between;
       align-items: center;
       padding: 10px 15px; }
+      @media only screen and (min-width: 1024px) {
+        body header nav {
+          font-size: 20px; } }
       body header nav figcaption {
-        font-weight: bolder; }
+        font-weight: bolder;
+        font-family: Pacifico, Roboto; }
       @media only screen and (min-width: 768px) {
         body header nav #ham {
           display: none; } }
@@ -91,7 +96,8 @@ body {
           padding: 80px 81px; } }
       @media only screen and (min-width: 1024px) {
         body header #hero {
-          padding: 105px; } }
+          padding: 105px;
+          font-size: 22px; } }
       @media only screen and (min-width: 1024px) {
         body header #hero .text {
           width: 44%; } }
@@ -105,7 +111,9 @@ body {
             margin: unset; } }
         @media only screen and (min-width: 1024px) {
           body header #hero img {
-            width: 383px; } }
+            width: 383px;
+            width: 473px;
+            height: 273px; } }
       body header #hero h1 {
         padding: 10px;
         text-transform: capitalize;
@@ -113,11 +121,19 @@ body {
         @media only screen and (min-width: 768px) {
           body header #hero h1 {
             padding: unset; } }
+        @media only screen and (min-width: 1024px) {
+          body header #hero h1 {
+            padding: 0px;
+            line-height: 46px;
+            margin-bottom: 10px; } }
       body header #hero .buttons {
         margin: 25px auto; }
         @media only screen and (min-width: 768px) {
           body header #hero .buttons {
             margin: 10px auto; } }
+        @media only screen and (min-width: 1024px) {
+          body header #hero .buttons {
+            margin-top: 10px; } }
         body header #hero .buttons a {
           font-family: Montserrat;
           text-decoration: none;
@@ -128,22 +144,33 @@ body {
           border-radius: 5px;
           font-weight: bolder;
           word-spacing: 4px;
-          letter-spacing: 3px; }
+          letter-spacing: 3px;
+          background-color: #2F2E41;
+          color: #F6B408;
+          margin: 22px auto;
+          border: 3px solid #2F2E41; }
           @media only screen and (min-width: 768px) {
             body header #hero .buttons a {
               margin: unset; } }
         body header #hero .buttons .search {
-          color: #2F2E41; }
+          color: #2F2E41;
+          background-color: white;
+          border-color: white; }
+          body header #hero .buttons .search:hover {
+            box-shadow: 4px 3px 5px #2F2E41; }
         body header #hero .buttons .signup {
-          background-color: #F6B408; }
+          background-color: #2F2E41;
+          color: #F6B408; }
           body header #hero .buttons .signup:hover {
-            background-color: #2F2E41;
-            color: #F6B408; }
+            box-shadow: 4px 3px 5px #2F2E41; }
           @media only screen and (min-width: 768px) {
             body header #hero .buttons .signup {
               margin-left: 10px; } }
   body main {
     font-family: Montserrat; }
+    @media only screen and (min-width: 1024px) {
+      body main {
+        font-size: 20px; } }
     body main .cta {
       margin-top: 10px;
       margin-bottom: 10px;
@@ -153,16 +180,20 @@ body {
       box-shadow: 2px 1px 5px #2F2E41;
       border-radius: 5px;
       font-weight: bolder;
-      background-color: #F6B408;
+      background-color: #2F2E41;
+      color: #F6B408;
       word-spacing: 4px;
       letter-spacing: 3px;
-      margin: 22px auto; }
+      margin: 22px auto;
+      border: 3px solid #2F2E41; }
       body main .cta:hover {
         background-color: white;
         color: #2F2E41; }
     body main .white-hover:hover {
       background-color: #2F2E41;
-      color: #F6B408; }
+      color: #F6B408;
+      border: 3px solid #2F2E41;
+      box-shadow: 7px 6px 5px #2F2E41; }
     body main .svg {
       height: 20px;
       width: 100%;
@@ -204,7 +235,8 @@ body {
             grid-row: 1; } }
         @media only screen and (min-width: 1024px) {
           body main .wrapper-2 .img {
-            width: 300px; } }
+            width: 300px;
+            width: 360px; } }
       body main .wrapper-2 .text {
         display: flex;
         flex-direction: column;
@@ -262,7 +294,8 @@ body {
               width: 250px; } }
           @media only screen and (min-width: 1024px) {
             body main .wrapper-3 .wrapper-container .img {
-              width: 290px; } }
+              width: 290px;
+              width: 360px; } }
         body main .wrapper-3 .wrapper-container .text {
           color: #fff;
           padding: 35px;
@@ -271,6 +304,15 @@ body {
             body main .wrapper-3 .wrapper-container .text {
               text-align: left;
               padding: 0px 0 0 30px; } }
+          body main .wrapper-3 .wrapper-container .text a {
+            background-color: #F6B408;
+            color: #2F2E41;
+            border-color: #F6B408; }
+            body main .wrapper-3 .wrapper-container .text a:hover {
+              color: #F6B408;
+              border-color: #2F2E41;
+              background-color: #2F2E41;
+              box-shadow: 2px 1px 5px #F6B408; }
     body main .wrapper-4 {
       padding: 25px; }
       @media only screen and (min-width: 768px) {
@@ -394,7 +436,8 @@ body {
               height: 215px; } }
           @media only screen and (min-width: 1024px) {
             body main .wrapper-6 .container .box {
-              height: 270px; } }
+              height: 270px;
+              padding: 20px 15px; } }
           body main .wrapper-6 .container .box h3 {
             color: #F6B408;
             margin: 15px auto; }
@@ -409,27 +452,72 @@ body {
         body main #call_to_action {
           flex-direction: row;
           justify-content: space-around; } }
+      @media only screen and (min-width: 1024px) {
+        body main #call_to_action {
+          margin: 25px 135px; } }
       @media only screen and (min-width: 650px) {
         body main #call_to_action a {
           margin: 15px 125px 15px 10px; } }
       body main #call_to_action h4 {
         margin: 15px auto;
-        font-size: 21px; }
+        font-size: 21px;
+        color: #2F2E41; }
         @media only screen and (min-width: 650px) {
           body main #call_to_action h4 {
             margin: 15px 10px 15px 125px; } }
   body footer {
     text-align: center;
-    font-family: Montserrat; }
-    body footer div {
-      background: #2F2E41; }
-      body footer div p {
-        color: white; }
+    font-family: Montserrat;
+    color: white; }
+    body footer .container {
+      background: #2F2E41;
+      padding: 20px 25px; }
+      body footer .container h3 {
+        margin: 10px auto; }
+      body footer .container p {
+        color: white;
+        text-align: left;
+        margin: 15px auto; }
+      body footer .container form {
+        display: grid; }
+        body footer .container form .form-group {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 10px; }
+          body footer .container form .form-group label {
+            display: block; }
+          body footer .container form .form-group .input {
+            display: block;
+            border-radius: 5px;
+            padding: 2px 7px;
+            width: 188px !important; }
+            @media only screen and (min-width: 768px) {
+              body footer .container form .form-group .input {
+                width: 50% !important; } }
+            @media only screen and (min-width: 768px) {
+              body footer .container form .form-group .input {
+                width: 340px !important; } }
+          body footer .container form .form-group textarea {
+            padding: 2px 3px;
+            display: block;
+            border-radius: 5px; }
+        body footer .container form input[type="submit"] {
+          border-radius: 5px;
+          padding: 3px 15px;
+          border: none;
+          margin-top: 3px;
+          color: #2F2E41;
+          background: #F6B408;
+          width: 80px;
+          font-weight: bold; }
     body footer p {
       color: #2F2E41;
       padding: 18px 0px; }
       body footer p a {
         color: #F6B408;
+        font-weight: bolder;
+        font-family: Pacifico;
         text-decoration: none; }
 
 /*# sourceMappingURL=master.css.map */

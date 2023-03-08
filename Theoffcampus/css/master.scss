@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 $primary: rgb(47, 35, 80);
@@ -39,6 +40,7 @@ $accent: #F6B408;
     margin: 0;
     box-sizing: border-box;
     line-height: 26px;
+
 }
 
 body{
@@ -53,9 +55,13 @@ body{
             align-items: center;
             padding:10px 15px;
 
+            @include desktop(){
+                font-size: 20px;
+            }
+
             figcaption{
-                // color: $accent;
                 font-weight: bolder;
+                font-family: Pacifico, Roboto;
             }
 
             #ham{
@@ -152,6 +158,7 @@ body{
                 justify-content: space-around;
                 padding: 60px 40px;
                 text-align: left;
+                
             }
 
             @include bigger-tablet{
@@ -160,6 +167,7 @@ body{
 
             @include desktop(){
                 padding: 105px;
+                font-size: 22px;
             }
 
             .text{
@@ -180,15 +188,23 @@ body{
 
                 @include desktop(){
                     width: 383px;
+                    width: 473px;
+                    height: 273px;
                 }
             }
             h1{
                 padding:10px;
                 text-transform: capitalize;
                 line-height: 36px;
-
+                
                 @include tablet{
                     padding:unset;
+                }
+                
+                @include desktop(){
+                    padding:0px;
+                    line-height: 46px;
+                    margin-bottom:10px;
                 }
             }
             .buttons{
@@ -196,6 +212,10 @@ body{
 
                 @include tablet{
                     margin: 10px auto;
+                }
+
+                @include desktop(){
+                    margin-top:10px;
                 }
 
                 a{
@@ -209,6 +229,10 @@ body{
                     font-weight: bolder;
                     word-spacing: 4px;
                     letter-spacing: 3px;
+                    background-color: $primary;
+                    color:$accent;
+                    margin:22px auto;
+                    border:3px solid $primary;
 
                     @include tablet{
                         margin:unset;
@@ -217,20 +241,23 @@ body{
 
                 .search{
                  color: $primary;
-                }
+                 background-color: $complimentary;
+                 border-color: $complimentary;
 
+                 &:hover{
+                     box-shadow: 4px 3px 5px $primary;
+                 }
+                }
+                
                 .signup{
-                    background-color: $accent;
+                    background-color: $primary;
+                    color:$accent;
+                    
                     &:hover{
-                        background-color: $primary;
-                        color: $accent;
+                        // background-color: $primary;
+                        // color: $accent;
+                        box-shadow: 4px 3px 5px $primary;
                     }
-                //     &:active{
-                //         background-color: $complimentary;
-                //         color: $accent;
-                //         border: $accent;
-                //         box-shadow: 4px 3px 5px $primary;
-                //  }
 
                  @include tablet{
                     margin-left: 10px;
@@ -245,6 +272,10 @@ body{
 
         font-family: Montserrat;
 
+        @include desktop(){
+            font-size: 20px;
+        }
+
         .cta{
             margin-top: 10px;
             margin-bottom: 10px;
@@ -254,10 +285,13 @@ body{
             box-shadow: 2px 1px 5px $primary;
             border-radius: 5px;
             font-weight: bolder;
-            background-color: $accent;
+            // background-color: $accent;
+            background-color: $primary;
+            color:$accent;
             word-spacing: 4px;
             letter-spacing: 3px;
             margin:22px auto;
+            border:3px solid $primary;
 
             &:hover{
                 background-color: $complimentary;
@@ -267,8 +301,14 @@ body{
 
         .white-hover{
             &:hover{
+                // background-color: $primary;
+                // color: $accent;
                 background-color: $primary;
                 color: $accent;
+                border:3px solid $primary;
+                box-shadow: 7px 6px 5px $primary;
+
+                
             }
         }
         
@@ -321,14 +361,12 @@ body{
 
                 @include tablet{
                     width: 264px;
-
                     grid-column: 2/3;
                     grid-row:1;
                 }
                 @include desktop{
                     width: 300px;
-
-                
+                    width: 360px;
                 }
             }
             .text{
@@ -412,6 +450,7 @@ body{
                    }                    
                     @include desktop(){
                         width: 290px;
+                        width: 360px;
                    }                    
 
                 }
@@ -424,6 +463,19 @@ body{
                     @include tablet(){
                         text-align: left;
                         padding: 0px 0 0 30px;
+                    }
+
+                    a{
+                        background-color: $accent;
+                        color:$primary;
+                        border-color: $accent;
+                        
+                        &:hover{
+                            color: $accent;
+                            border-color: $primary;
+                            background-color:$primary;
+                            box-shadow: 2px 1px 5px $accent;
+                        }
                     }
                 }
             }
@@ -607,6 +659,8 @@ body{
                     
                     @include desktop(){
                         height:270px;
+                        // width:90%;
+                        padding:20px 15px;
                     }
 
                     h3{
@@ -631,6 +685,10 @@ body{
                 flex-direction: row;
                 justify-content: space-around;
             }
+            
+            @include desktop(){
+                margin:25px 135px;
+            }
 
             a{
                 @include mobile-landscape(){
@@ -641,6 +699,7 @@ body{
             h4{
                 margin:15px auto;
                 font-size: 21px;
+                color:$primary;
 
                 @include mobile-landscape(){
                     margin:15px 10px 15px 125px;
@@ -653,10 +712,69 @@ body{
     footer{
         text-align: center;
         font-family: Montserrat;
-        div{
+        color:$complimentary;
+
+        .container{
             background: $primary;
+            padding:20px 25px;
+
+            h3{
+                margin:10px auto;
+            }
+
             p{
                 color:$complimentary;
+                text-align: left;
+                margin:15px auto;
+
+            }
+
+            form{
+                display:grid;
+                // flex-direction: column;
+                // justify-content: space-around;
+                // align-items: center;
+
+                .form-group{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom:10px;
+
+                    label{
+                        display: block;
+                    }
+                    .input{
+                        display: block;
+                        border-radius: 5px;
+                        padding:2px 7px;
+                        width:188px!important;
+
+                        @include tablet{
+                            width:50%!important;
+                        }
+
+                        @include tablet{
+                            width:340px!important;
+                        }
+                    }
+                    
+                    textarea{
+                        padding:2px 3px;
+                        display: block;
+                        border-radius: 5px;
+                    }
+                }
+                input[type="submit"]{
+                    border-radius: 5px;
+                    padding:3px 15px;
+                    border:none;
+                    margin-top: 3px;
+                    color:$primary;
+                    background:$accent;
+                    width:80px;
+                    font-weight: bold;
+                }
             }
         }
         p{
@@ -664,6 +782,8 @@ body{
             padding:18px 0px;
             a{
                 color:$accent;
+                font-weight: bolder;
+                font-family: Pacifico;
                 text-decoration: none;
             }
         }
