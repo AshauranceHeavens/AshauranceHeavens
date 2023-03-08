@@ -178,11 +178,11 @@ body{
 
             @include mobile-landscape{
                 margin:5px ;
-                &:hover{
-                    // background-color: $primary;
-                    box-shadow: 3px 2px 5px $primary;
-                    border-radius: 5px;
-                }
+                // &:hover{
+                //     // background-color: $primary;
+                //     box-shadow: 3px 2px 5px $primary;
+                //     border-radius: 5px;
+                // }
              }
 
              @include desktop{

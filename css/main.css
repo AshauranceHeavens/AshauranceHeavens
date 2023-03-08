@@ -86,10 +86,7 @@ body {
       padding: 4px 8px; }
       @media only screen and (min-width: 650px) {
         #header #header-nav ul li {
-          margin: 5px; }
-          #header #header-nav ul li:hover {
-            box-shadow: 3px 2px 5px #222831;
-            border-radius: 5px; } }
+          margin: 5px; } }
       @media only screen and (min-width: 1024px) {
         #header #header-nav ul li {
           margin: 5px 15px; } }
