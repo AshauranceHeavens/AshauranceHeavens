@@ -1,0 +1,122 @@
+@import "./_constants";
+
+#main {
+  font-family: $Montserrat;
+  color: $accent;
+
+  .pink-container {
+    background: $primary;
+    transform: skewY(-2deg);
+    padding: 40px 0px;
+
+    @include mobile-landscape {
+      padding: 80px 0px;
+    }
+
+    .pink {
+      transform: skewY(2deg);
+
+      .pink-grid-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile-landscape {
+          grid-template-columns: repeat(2, 1fr);
+          grid-row-gap: 25px;
+          align-items: center;
+        }
+        @include desktop {
+          grid-template-columns: repeat(4, 1fr);
+          grid-row-gap: 25px;
+          align-items: center;
+        }
+
+        .box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .image1 {
+            background: url("./../images/image5.jpg");
+          }
+          .image2 {
+            background: url("./../images/image4.jpg");
+          }
+          .image3 {
+            background: url("./../images/image1.jpg");
+          }
+          .image4 {
+            background: url("./../images/image2.jpg");
+          }
+          .image_container {
+            width: 200px;
+            height: 285px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 20px auto;
+          }
+
+          // img {
+          //   width: 210px;
+          //   margin: 20px auto;
+          // }
+          p {
+            text-align: justify;
+            padding: 0 52px;
+
+            @include desktop {
+              padding: 0 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonials-container {
+    color: $black;
+    background-color: $grey;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin-top: -40px;
+
+    @include desktop {
+      padding: 150px 40px 70px;
+      margin-top: -60px;
+    }
+
+    .testimonials {
+      .testimonials-grid-container {
+        @include mobile-landscape {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+        }
+
+        .testimonial {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-content: center;
+          margin-bottom: 30px;
+
+          img {
+            width: 100px;
+            margin: 15px auto;
+            border-radius: 60px;
+          }
+          p {
+            text-align: center;
+            padding: 0px 30px;
+
+            @include desktop {
+              padding: 0px 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

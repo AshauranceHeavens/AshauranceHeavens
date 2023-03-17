@@ -1,0 +1,54 @@
+@import "./_constants";
+
+.footer {
+  font-family: $Montserrat;
+
+  @include desktop {
+    font-size: 25px;
+  }
+
+  .footer-container {
+    color: $accent;
+    background-color: $black;
+    text-align: center;
+    padding: 20px 0;
+    a {
+      color: $primary;
+      text-decoration: none;
+      &:hover {
+        color: $complimentary;
+      }
+    }
+    .contacts-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 20px auto 5px;
+
+      @include desktop {
+        margin: 40px auto 5px;
+      }
+
+      img {
+        width: 20px;
+        background: $accent;
+        border-radius: 50px;
+
+        @include desktop {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    padding: 10px;
+    a {
+      color: $primary;
+      text-decoration: none;
+      font-family: $Pacifico;
+      font-weight: bold;
+    }
+  }
+}

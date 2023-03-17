@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pacifico&family=Roboto:wght@300&display=swap");
+.footer {
+  font-family: Montserrat; }
+  @media only screen and (min-width: 1024px) {
+    .footer {
+      font-size: 25px; } }
+  .footer .footer-container {
+    color: #fff;
+    background-color: #1e1c1c;
+    text-align: center;
+    padding: 20px 0; }
+    .footer .footer-container a {
+      color: #f88383;
+      text-decoration: none; }
+      .footer .footer-container a:hover {
+        color: #51d88b; }
+    .footer .footer-container .contacts-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 20px auto 5px; }
+      @media only screen and (min-width: 1024px) {
+        .footer .footer-container .contacts-container {
+          margin: 40px auto 5px; } }
+      .footer .footer-container .contacts-container img {
+        width: 20px;
+        background: #fff;
+        border-radius: 50px; }
+        @media only screen and (min-width: 1024px) {
+          .footer .footer-container .contacts-container img {
+            width: 30px; } }
+  .footer p {
+    text-align: center;
+    padding: 10px; }
+    .footer p a {
+      color: #f88383;
+      text-decoration: none;
+      font-family: Pacifico;
+      font-weight: bold; }
+
+/*# sourceMappingURL=footer.css.map */

@@ -53,7 +53,7 @@ body{
 }
 #header{
 
-    // background-color: #393E46 !important;
+    background-color: $accent !important;
 
     #header-nav{
 
@@ -124,6 +124,7 @@ body{
 
 
                 @include mobile-landscape{
+                    transition: unset;
                     position: unset;
                     padding: unset;
                     // background-color: #EEEEEE;
@@ -210,8 +211,11 @@ body{
     }
 
     #hero{
-        // background: linear-gradient(180deg, $primary, $secondary);
-        background: $accent; //delete this
+        // background: linear-gradient(-45deg, $accent, $primary);
+        // background-color: $accent; //delete this'
+        background: url('/images/bg-dot.png') no-repeat;
+        //             url('/images/bg-round.png') no-repeat;
+        background-position: 5% 20%; 
         display: flex;
         justify-content: center;
         align-items: center;

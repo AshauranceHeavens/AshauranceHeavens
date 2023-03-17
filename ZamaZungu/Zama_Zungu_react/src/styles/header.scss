@@ -1,0 +1,188 @@
+@import "./_constants";
+
+.header {
+  color: $black;
+  background-color: $accent;
+  visibility: hidden;
+  @include desktop {
+    font-size: 25px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+
+    @include tablet {
+      padding: 17px 25px;
+      // font-size: 20px;
+    }
+
+    figcaption {
+      font-family: $Pacifico;
+      font-weight: bold;
+    }
+    #ham {
+      @include tablet {
+        display: none;
+      }
+      .div1,
+      .div2,
+      .div3 {
+        background: $black;
+        height: 3px;
+        width: 27px;
+        margin-bottom: 3px;
+      }
+    }
+
+    #slider {
+      background: $black;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: -70vw;
+      z-index: 10;
+      width: 70vw;
+      transition: 0.5s ease;
+
+      @include tablet {
+        background: $accent;
+        position: static;
+        transition: unset;
+        width: unset;
+        z-index: unset;
+      }
+
+      #cross {
+        position: relative;
+        margin: 10% 10px 15px 85%;
+
+        @include tablet {
+          display: none;
+        }
+        .div1,
+        .div2 {
+          background: $accent;
+          height: 3px;
+          width: 27px;
+          margin-bottom: 3px;
+        }
+
+        .div1 {
+          transform: rotate(45deg);
+        }
+        .div2 {
+          transform: rotate(-45deg) translate(3.5px, -4px);
+        }
+      }
+
+      .ul-container {
+        background: black;
+        padding: 10px;
+        margin-top: 60px;
+
+        @include tablet {
+          background: $accent;
+          margin-top: unset;
+          padding: unset;
+        }
+
+        ul {
+          padding: 0px 10%;
+          @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 1px;
+          }
+          li {
+            list-style-type: none;
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid black;
+            padding: 5px;
+
+            &:hover {
+              border-color: $primary;
+            }
+
+            @include tablet {
+              border: 1px solid $accent;
+              text-align: unset;
+              margin: auto auto auto 12px;
+
+              &:hover {
+                background: $black;
+                a {
+                  color: $accent;
+                }
+              }
+            }
+            @include desktop {
+              text-align: unset;
+              margin: auto auto auto 25px;
+            }
+
+            a {
+              color: $accent;
+              font-family: $Roboto;
+              text-decoration: none;
+
+              @include tablet {
+                color: $black;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: $Roboto;
+    font-weight: bolder;
+    margin: 90px auto;
+    text-align: center;
+    width: 195px;
+
+    @include tablet {
+      width: 395px;
+      font-size: 55px;
+      margin: 100px auto 160px;
+    }
+    @include desktop {
+      width: 395px;
+      font-size: 65px;
+      margin: 100px auto 160px;
+    }
+    span {
+      color: $primary;
+    }
+  }
+}
+
+.link {
+  color: $complimentary;
+  &:hover {
+    color: $accent;
+  }
+}
+.button {
+  // width: 150px;
+  border: 1px solid $complimentary;
+  border-radius: 5px;
+  padding: 10px;
+  // margin-top: 10px;
+  font-weight: bold;
+  &:hover {
+    border-color: $accent;
+  }
+}
