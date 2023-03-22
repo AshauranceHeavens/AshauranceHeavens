@@ -86,6 +86,7 @@ body{
                 right: -70vw;
                 width:70vw;
                 transition: .5s ease-in-out;
+                z-index:10;
                 
                 @include tablet(){
                     position: unset;
