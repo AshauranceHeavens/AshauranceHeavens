@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ceac0cff.css",
+    "main.js": "./static/js/main.f8b3cc78.js",
+    "static/js/27.8123d5ef.chunk.js": "./static/js/27.8123d5ef.chunk.js",
+    "static/media/header_image.svg": "./static/media/header_image.cf71bbba47c27f4dba57dcced6a87683.svg",
+    "static/media/zamazungu.png": "./static/media/zamazungu.19223c7ead26ae9d58ea.png",
+    "static/media/header-img.jpeg": "./static/media/header-img.39b171e04ffddfe4ed92.jpeg",
+    "static/media/nelisiwe.jpg": "./static/media/nelisiwe.a0b8100318eacfa151f5.jpg",
+    "static/media/design_tools.svg": "./static/media/design_tools.0297f99fa620b9dcfd06f46ad4a25143.svg",
+    "static/media/php.png": "./static/media/php.52ccc07d77df03f54644.png",
+    "static/media/taxifare.png": "./static/media/taxifare.4c23c48251b8b604e70a.png",
+    "static/media/theoffcampus.jpeg": "./static/media/theoffcampus.54d752b92edb0d2b7c1d.jpeg",
+    "static/media/structure.png": "./static/media/structure.4127b36258b5e9dc8f88.png",
+    "static/media/sass.png": "./static/media/sass.91714f748188b46f4e33.png",
+    "static/media/php-code.png": "./static/media/php-code.a6618a8bdcd3dda06373.png",
+    "static/media/official-purple.png": "./static/media/official-purple.0a2e55d1b89dc44cb61d.png",
+    "static/media/atom.png": "./static/media/atom.20acf666d9ee901f47bc.png",
+    "static/media/responsive.svg": "./static/media/responsive.88cd6e9aff24f422b154895a861b5a6b.svg",
+    "static/media/instant_support.svg": "./static/media/instant_support.15419a3683d79c24cac346cd2ccaa059.svg",
+    "static/media/fast_loading.svg": "./static/media/fast_loading.a8c2af7a967144f7b7e22f3a2ef96859.svg",
+    "static/media/active_support.svg": "./static/media/active_support.7e2fd06b2968cdfbd36ca4ab81a9fae2.svg",
+    "static/media/search_engines.svg": "./static/media/search_engines.1db02243ad9047c9eb5154daa60f751d.svg",
+    "static/media/small-path.svg": "./static/media/small-path.3f9f048e559ddcf4621d.svg",
+    "index.html": "./index.html",
+    "static/media/official-white-cropped.svg": "./static/media/official-white-cropped.300757daaa1cd81b81c4.svg"
+  },
+  "entrypoints": [
+    "static/css/main.ceac0cff.css",
+    "static/js/main.f8b3cc78.js"
+  ]
+}
