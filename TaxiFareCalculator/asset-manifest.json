@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/TaxiFareCalculator/static/css/main.7e46d74f.css",
+    "main.js": "/TaxiFareCalculator/static/js/main.77fabaca.js",
+    "static/js/27.86396126.chunk.js": "/TaxiFareCalculator/static/js/27.86396126.chunk.js",
+    "static/media/taxifarecalculator.mp4": "/TaxiFareCalculator/static/media/taxifarecalculator.2c9403aae31434f6a7c9.mp4",
+    "static/media/taxi_2.png": "/TaxiFareCalculator/static/media/taxi_2.bfa379eedca04a3cac8c.png",
+    "static/media/taxi_3.png": "/TaxiFareCalculator/static/media/taxi_3.c041fd251c2f0c185918.png",
+    "static/media/taxi_1.png": "/TaxiFareCalculator/static/media/taxi_1.d88b251436cc178cd1e8.png",
+    "static/media/minibus.png": "/TaxiFareCalculator/static/media/minibus.41b8bfec03cbc0ef1f6e.png",
+    "index.html": "/TaxiFareCalculator/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.7e46d74f.css",
+    "static/js/main.77fabaca.js"
+  ]
+}
