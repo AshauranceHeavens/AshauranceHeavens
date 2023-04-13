@@ -13,17 +13,31 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
               vero necessitatibus delectus sint eligendi incidunt nihil aliquam
               mollitia cumque voluptates quibusdam fuga iusto beatae,
-              consequatur quis modi exercitationem debitis suscipit,{" "}
+              consequatur quis modi exercitationem debitis suscipit, Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Optio vero
+              necessitatibus delectus sint eligendi incidunt nihil aliquam
+              mollitia cumque voluptates quibusdam fuga iusto beatae,
+              consequatur quis modi exercitationem debitis suscipit, sunt enim
+              eos nostrum at. Odio eligendi fuga excepturi. Beatae quasi, vel
+              maiores at mollitia cupiditate quae tempora velit Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Optio vero
+              necessitatibus delectus sint eligendi incidunt nihil aliquam
+              mollitia cumque voluptates quibusdam fuga iusto beatae,
+              consequatur quis modi exercitationem debitis suscipit, Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Optio vero
+              necessitatibus delectus sint eligendi incidunt nihil aliquam
+              mollitia cumque voluptates quibusdam fuga iusto beatae,
+              consequatur quis modi exercitationem debitis suscipit, sunt enim
+              eos nostrum at. Odio eligendi fuga excepturi. Beatae quasi, vel
+              maiores at mollitia cupiditate quae tempora velit dolor sit amet
+              consectetur adipisicing elit. Optio vero necessitatibus delectus
+              sint eligendi incidunt nihil aliquam mollitia cumque voluptates
+              quibusdam fuga iusto beatae, consequatur quis modi exercitationem
+              debitis suscipit, sunt enim eos nostrum at. Odio eligendi fuga
+              excepturi. Beatae quasi, vel maiores at mollitia cupiditate quae
+              tempora velit
             </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vero
-            necessitatibus delectus sint eligendi incidunt nihil aliquam
-            mollitia cumque voluptates quibusdam fuga iusto beatae, consequatur
-            quis modi exercitationem debitis suscipit, sunt enim eos nostrum at.
-            Odio eligendi fuga excepturi. Beatae quasi, vel maiores at mollitia
-            cupiditate quae tempora velit
-          </p>
         </div>
       </div>
       <div className="about-green">
@@ -34,17 +48,31 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
               vero necessitatibus delectus sint eligendi incidunt nihil aliquam
               mollitia cumque voluptates quibusdam fuga iusto beatae,
-              consequatur quis modi exercitationem debitis suscipit,{" "}
+              consequatur quis modi exercitationem debitis suscipit, Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Optio vero
+              necessitatibus delectus sint eligendi incidunt nihil aliquam
+              mollitia cumque voluptates quibusdam fuga iusto beatae,
+              consequatur quis modi exercitationem debitis suscipit, sunt enim
+              eos nostrum at. Odio eligendi fuga excepturi. Beatae quasi, vel
+              maiores at mollitia cupiditate quae tempora velit Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Optio vero
+              necessitatibus delectus sint eligendi incidunt nihil aliquam
+              mollitia cumque voluptates quibusdam fuga iusto beatae,
+              consequatur quis modi exercitationem debitis suscipit, Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Optio vero
+              necessitatibus delectus sint eligendi incidunt nihil aliquam
+              mollitia cumque voluptates quibusdam fuga iusto beatae,
+              consequatur quis modi exercitationem debitis suscipit, sunt enim
+              eos nostrum at. Odio eligendi fuga excepturi. Beatae quasi, vel
+              maiores at mollitia cupiditate quae tempora velit dolor sit amet
+              consectetur adipisicing elit. Optio vero necessitatibus delectus
+              sint eligendi incidunt nihil aliquam mollitia cumque voluptates
+              quibusdam fuga iusto beatae, consequatur quis modi exercitationem
+              debitis suscipit, sunt enim eos nostrum at. Odio eligendi fuga
+              excepturi. Beatae quasi, vel maiores at mollitia cupiditate quae
+              tempora velit
             </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vero
-            necessitatibus delectus sint eligendi incidunt nihil aliquam
-            mollitia cumque voluptates quibusdam fuga iusto beatae, consequatur
-            quis modi exercitationem debitis suscipit, sunt enim eos nostrum at.
-            Odio eligendi fuga excepturi. Beatae quasi, vel maiores at mollitia
-            cupiditate quae tempora velit
-          </p>
         </div>
       </div>
       <CallToAction />

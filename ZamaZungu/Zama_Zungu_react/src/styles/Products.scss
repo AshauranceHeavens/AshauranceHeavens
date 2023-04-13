@@ -115,7 +115,7 @@
             p {
               @include mobile-landscape {
                 margin-left: 40px;
-                margin-right: 40px;
+                margin-left: 40px;
               }
             }
             .img {
@@ -186,10 +186,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 10px auto;
-
+      margin: 2.5em auto;
+      
       @include mobile-landscape {
         flex-direction: row;
+      }
+      
+      @include desktop {
+        margin: 3.5em auto;
       }
     }
     .green-box-1 {
@@ -199,11 +203,25 @@
       .green-img {
         background: url("./../images/image2.jpg");
       }
+      p{
+        @include mobile-landscape {
+          text-align: right;
+        }
+
+      }
     }
     .green-box-2 {
       .green-img {
         background: url("./../images/image2.jpg");
       }
+
+      p{
+        @include mobile-landscape {
+          text-align: left;
+        }
+
+      }
+
     }
     .green-img {
       height: 250px;
@@ -211,6 +229,7 @@
       background-size: cover !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
+      margin:0px 1.5em;
 
       @include mobile-landscape {
         height: 260px;
@@ -221,15 +240,14 @@
         height: 292px;
         width: 1680px;
       }
+
+      @include desktop {
+        height: 15em;
+        width: 70em;
+      }
     }
     p {
-      padding: 30px 70px;
-      text-align: center;
-
-      @include mobile-landscape {
-        padding: 30px 70px;
-        text-align: left;
-      }
+      text-align: center;     
     }
   }
 }

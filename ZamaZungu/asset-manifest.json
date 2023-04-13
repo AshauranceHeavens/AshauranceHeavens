@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ZamaZungu/static/css/main.12a1b036.css",
-    "main.js": "/ZamaZungu/static/js/main.a9091068.js",
+    "main.css": "/ZamaZungu/static/css/main.1ad45d5f.css",
+    "main.js": "/ZamaZungu/static/js/main.a43bdba7.js",
     "static/js/787.226f4826.chunk.js": "/ZamaZungu/static/js/787.226f4826.chunk.js",
     "static/media/image3.jpg": "/ZamaZungu/static/media/image3.242bc68e4b0d7fc7db63.jpg",
     "static/media/image1.jpg": "/ZamaZungu/static/media/image1.6d8070eca880257847fc.jpg",
@@ -12,12 +12,12 @@
     "static/media/cindy.jpg": "/ZamaZungu/static/media/cindy.74727cbd53489e9e464a.jpg",
     "static/media/phone.webp": "/ZamaZungu/static/media/phone.5cfaebb345ade33423ca.webp",
     "index.html": "/ZamaZungu/index.html",
-    "main.12a1b036.css.map": "/ZamaZungu/static/css/main.12a1b036.css.map",
-    "main.a9091068.js.map": "/ZamaZungu/static/js/main.a9091068.js.map",
+    "main.1ad45d5f.css.map": "/ZamaZungu/static/css/main.1ad45d5f.css.map",
+    "main.a43bdba7.js.map": "/ZamaZungu/static/js/main.a43bdba7.js.map",
     "787.226f4826.chunk.js.map": "/ZamaZungu/static/js/787.226f4826.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12a1b036.css",
-    "static/js/main.a9091068.js"
+    "static/css/main.1ad45d5f.css",
+    "static/js/main.a43bdba7.js"
   ]
 }

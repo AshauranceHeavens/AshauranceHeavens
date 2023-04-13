@@ -83,7 +83,7 @@
       @media only screen and (min-width: 650px) {
         .products-container .products-pink .products-pink-container .products-pink-grid .grid-box2 .box1 p {
           margin-left: 40px;
-          margin-right: 40px; } }
+          margin-left: 40px; } }
       .products-container .products-pink .products-pink-container .products-pink-grid .grid-box2 .box1 .img {
         height: 200px;
         width: 310px;
@@ -128,24 +128,35 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 10px auto; }
+      margin: 2.5em auto; }
       @media only screen and (min-width: 650px) {
         .products-container .green-container .green-box-1,
         .products-container .green-container .green-box-2 {
           flex-direction: row; } }
+      @media only screen and (min-width: 1024px) {
+        .products-container .green-container .green-box-1,
+        .products-container .green-container .green-box-2 {
+          margin: 3.5em auto; } }
     @media only screen and (min-width: 650px) {
       .products-container .green-container .green-box-1 {
         flex-direction: row-reverse; } }
     .products-container .green-container .green-box-1 .green-img {
       background: url("./../images/image2.jpg"); }
+    @media only screen and (min-width: 650px) {
+      .products-container .green-container .green-box-1 p {
+        text-align: right; } }
     .products-container .green-container .green-box-2 .green-img {
       background: url("./../images/image2.jpg"); }
+    @media only screen and (min-width: 650px) {
+      .products-container .green-container .green-box-2 p {
+        text-align: left; } }
     .products-container .green-container .green-img {
       height: 250px;
       width: 150px;
       background-size: cover !important;
       background-position: center !important;
-      background-repeat: no-repeat !important; }
+      background-repeat: no-repeat !important;
+      margin: 0px 1.5em; }
       @media only screen and (min-width: 650px) {
         .products-container .green-container .green-img {
           height: 260px;
@@ -154,12 +165,11 @@
         .products-container .green-container .green-img {
           height: 292px;
           width: 1680px; } }
+      @media only screen and (min-width: 1024px) {
+        .products-container .green-container .green-img {
+          height: 15em;
+          width: 70em; } }
     .products-container .green-container p {
-      padding: 30px 70px;
       text-align: center; }
-      @media only screen and (min-width: 650px) {
-        .products-container .green-container p {
-          padding: 30px 70px;
-          text-align: left; } }
 
 /*# sourceMappingURL=Products.css.map */

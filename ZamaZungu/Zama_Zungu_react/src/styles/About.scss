@@ -1,4 +1,4 @@
-@import "./_constants";
+@import "./constants";
 
 .about-container {
   text-align: center;
@@ -12,48 +12,7 @@
     font-size: 25px;
   }
 
-  .grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    @include mobile-landscape {
-      flex-direction: row-reverse;
-      justify-content: space-evenly;
-      align-items: center;
-      align-content: center;
-    }
-  }
-
-  .grid-p {
-    padding: 5% 10%;
-
-    @include mobile-landscape {
-      padding: unset;
-      text-align: left;
-      width: 35%;
-    }
-  }
-
-  .out-grid-p {
-    margin: 20px 0px;
-    padding: 0 25px;
-
-    @include mobile-landscape {
-      padding: 0px 87px;
-    }
-
-    @include tablet {
-      padding: 0px 120px;
-      margin: 40px 0px;
-    }
-
-    @include desktop {
-      padding: 0px 160px;
-      margin: 40px 0px;
-    }
-  }
 
   .img {
     width: 210px;
@@ -62,6 +21,12 @@
     @include mobile-landscape {
       width: 190px;
     }
+
+    @include desktop {
+      width: 10em;
+    }
+
+    
   }
 
   .about-pink {
@@ -73,18 +38,34 @@
 
     .about-pink-container {
       transform: skewY(2deg);
-
-      .about-pink-grid {
-        p {
-          @extend .grid-p;
-        }
+      padding:2em;
+      
+      @include mobile-landscape{
+        padding:4em ;
+        align-items: center;
       }
 
-      p {
-        @extend .out-grid-p;
+      .about-pink-grid {
+        .img{
+          @include tablet{
+            float:right;
+            margin:20px 40px;
+          }
+
+          @include tablet{
+            float:right;
+            margin:20px 3em;
+          }
+        }
+        p {
+          text-align: justify;
+          
+        }
       }
     }
   }
+
+
 
   .about-green {
     background: $complimentary;
@@ -92,18 +73,35 @@
     margin-top: -50px;
 
     .about-green-container {
+      padding:2em;
+      
+      @include mobile-landscape{
+        padding:4em ;
+        align-items: center;
+      }
+
       .about-green-grid {
         @include mobile-landscape {
           flex-direction: row;
         }
+        .img{
+          @include tablet{
+            float:left;
+            margin:20px 40px;
+          }
+
+          @include tablet{
+            float:left;
+            margin:20px 3em;
+          }
+        }
 
         p {
-          @extend .grid-p;
+          text-align: justify;
+         
         }
       }
-      p {
-        @extend .out-grid-p;
-      }
+    
     }
   }
 }
