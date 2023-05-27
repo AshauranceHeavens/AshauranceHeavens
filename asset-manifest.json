@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.a8046e41.css",
-    "main.js": "./static/js/main.83ed8b52.js",
+    "main.css": "./static/css/main.0a37076c.css",
+    "main.js": "./static/js/main.b3763545.js",
     "static/js/27.8123d5ef.chunk.js": "./static/js/27.8123d5ef.chunk.js",
     "static/media/header_image.svg": "./static/media/header_image.cf71bbba47c27f4dba57dcced6a87683.svg",
+    "static/media/bootstrap-icons.woff?": "./static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/linuxbackground.png": "./static/media/linuxbackground.3b906e2eba71c06f329c.png",
     "static/media/zamazungu.png": "./static/media/zamazungu.19223c7ead26ae9d58ea.png",
+    "static/media/bootstrap-icons.woff2?": "./static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "static/media/header-img.jpeg": "./static/media/header-img.39b171e04ffddfe4ed92.jpeg",
     "static/media/nelisiwe.jpg": "./static/media/nelisiwe.a0b8100318eacfa151f5.jpg",
     "static/media/design_tools.svg": "./static/media/design_tools.0297f99fa620b9dcfd06f46ad4a25143.svg",
@@ -27,7 +30,7 @@
     "static/media/official-white-cropped.svg": "./static/media/official-white-cropped.300757daaa1cd81b81c4.svg"
   },
   "entrypoints": [
-    "static/css/main.a8046e41.css",
-    "static/js/main.83ed8b52.js"
+    "static/css/main.0a37076c.css",
+    "static/js/main.b3763545.js"
   ]
 }
