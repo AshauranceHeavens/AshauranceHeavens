@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Sye/static/css/main.b3031b1a.css",
+    "main.js": "/Sye/static/js/main.3477bb69.js",
+    "static/js/27.8123d5ef.chunk.js": "/Sye/static/js/27.8123d5ef.chunk.js",
+    "static/media/Phakade_lami.mp3": "/Sye/static/media/Phakade_lami.cb1bc8d69b8a6eb583d4.mp3",
+    "static/media/pink_sweater.png": "/Sye/static/media/pink_sweater.d241c10e556c81d284d2.png",
+    "static/media/candy.png": "/Sye/static/media/candy.b04c51439c78020c44a4.png",
+    "static/media/coutch.png": "/Sye/static/media/coutch.15f631f0597efdcc586d.png",
+    "static/media/angel.png": "/Sye/static/media/angel.f135e9975063a05a5fd9.png",
+    "static/media/laughter.png": "/Sye/static/media/laughter.78c515d3cbcda826cea5.png",
+    "static/media/blue_sweater.png": "/Sye/static/media/blue_sweater.12c8e25a5e13435f4670.png",
+    "static/media/flower.png": "/Sye/static/media/flower.e5cb2f019c7c85ed6e0d.png",
+    "static/media/yellow_jacket_baby.png": "/Sye/static/media/yellow_jacket_baby.5eade45c8bef1632ffc0.png",
+    "static/media/yellow_dress.png": "/Sye/static/media/yellow_dress.d8ec03c08b5f85c9ca82.png",
+    "static/media/yellow_jacket.png": "/Sye/static/media/yellow_jacket.ecdbdae6e7526d35275c.png",
+    "static/media/stick.png": "/Sye/static/media/stick.9ddcdaf6c38ad7758e59.png",
+    "static/media/yellow_sweater.png": "/Sye/static/media/yellow_sweater.96db262e861f97188111.png",
+    "static/media/Glossy Sheen Shine DEMO.ttf": "/Sye/static/media/Glossy Sheen Shine DEMO.14655a4fdec0f30d9688.ttf",
+    "static/media/Boba Cups.ttf": "/Sye/static/media/Boba Cups.91fe7b598636aeb35d9d.ttf",
+    "static/media/bg-bottom-hero.png": "/Sye/static/media/bg-bottom-hero.c91cc77ecf6aca0e49bd.png",
+    "static/media/teddy.svg": "/Sye/static/media/teddy.6d70bae51b2463ec2b246f778d954e4f.svg",
+    "index.html": "/Sye/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.b3031b1a.css",
+    "static/js/main.3477bb69.js"
+  ]
+}
